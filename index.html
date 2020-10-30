@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Martin | Mutembei</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="media/style.css">
+
+</head>
+<body id="body">
+
+<div class="btn-menu">
+		<div class="lines">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>	
+		
+	</div>
+	<div id="logo"> 
+
+  	<object>
+			<embed id="logo1" src="media/logoo.svg">	
+			</object>
+  </div>
+	<!-- <div id="middlebar">
+			<div class="mt">	
+				<div class="name1"><span class="marto">MARTIN</span></div>
+				<div class="projects"></div>
+			</div>
+	
+			<div class="mb">
+				<div class="about"></div>
+				<div class="name2"><span class="tembe">MUTEMBEI</span></div>
+			</div>	
+	
+			<div class="work">
+				
+			</div>
+		</div>
+			 -->
+
+	<div class="bottombar">
+		<div class="crights">Copyright © Dj Teenez | 2020</div>
+
+		<div class="terms-use">
+		<div class="privacy">Privacy Policy</div>
+		<div class="terms">Terms of Use</div>
+		</div>
+	</div>
+<!-- home section -->
+<section id="home">
+
+
+	<div id="pic">
+
+  </div>	
+  
+  <div id="name" class="active">Dj Teenez
+
+  </div>	
+  <div id="am">Explore...</div>
+  	<div id="texts">
+		<p id="content">
+			Alias Martin Mutembei, is Kenyan by Birth and by Experience. </br>
+			The Beautiful kind of Experiences. </br>
+			The kind of Experiences that makes you wanna Share.</br>
+			Not just the Music, but also the Love. Because Kenyans know how to Love. </br>
+			Because we know What we Love.</br>
+			Be it Music, Art, or even a Lifestyle, An Artist maybe, </br>
+			Or let's say the Favourite Friday Destination, </br>
+			There is always an Experience worth Loving. </br>
+			An Experience we can Relate with Personally.</br>
+			Because Music touches the Soul. </br>
+			And on that Friday Evening, when you Host your Party, or Enter that club, </br>
+			Maybe Board that Lithiumnized Matatu, Perhaps HotBoxing with your Earphones,</br>
+			And You Lose yourself in the Voodoo of Sessions by Dj Teenez, Then</br>
+			You'll realize, you have waay too many soulmates.</br>
+
+
+		</p>
+
+		<div id="signature"> 
+
+  			<object>
+				<embed id="sign" src="signature.svg">	
+			</object>
+  		</div>
+	</div>
+
+	
+</section>
+
+<section id="mix">
+  	
+	<div id="mymix">My Mixes</div>
+	
+</section>
+
+
+<section id="work">
+	<div id="mysvc">My Services</div>
+  	
+	
+	
+</section>
+
+
+<section id="contact">
+	<div id="ctct">Contacts</div>
+  	
+	
+	
+</section>
+
+
+<script src="media/jquery.js"></script>
+<script src="media/jquery.backstretch.min.js"></script>
+<script src="media/custom.js"></script>
+
+<script type="text/javascript">
+
+
+window.onload = function(){
+
+$(document).ready(function(){
+
+
+
+$("#am").click(function(e){
+
+		e.preventDefault();
+
+
+
+	});
+
+
+	$("#home").click(function(e){
+			e.preventDefault();
+				$("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
+				$("#name").animate({opacity:"0"}, {duration: 1000});
+				if (innerWidth > 750) {
+				$("#name").animate({fontSize:"3em"}, {duration: 1500});
+				$("#home").animate({left:"15%"}, {duration: 1000});
+				$("#home").animate({width:"70%"}, {duration: 1000});
+				$("#name").animate({left:"25%"}, {duration: 2000});
+				$("#name").animate({top:"35%"}, {duration: 1500});
+			}else{
+				$(".crights").animate({zIndex:"1"}, {duration: 1500});
+				$(".terms").animate({zIndex:"1"}, {duration: 1500});
+				$("#name").animate({fontSize:"2.5em"}, {duration: 1500});
+				$("#name").animate({left:"25%"}, {duration: 2000});
+				$("#name").animate({top:"35%"}, {duration: 1500});
+			}
+
+				$("#name").animate({opacity:"1"}, {duration: 2500});
+				$("#signature").delay(4000).animate({opacity:"1"}, {duration: 1000});
+
+
+		$("#am").animate({opacity:"0%"}, {duration: 300});
+				$("#am").fadeOut("slow");
+
+
+				$("#texts").delay(2400).fadeIn("slow");
+
+
+		});
+
+
+
+	
+
+
+
+
+
+});
+
+};
+
+</script>
+
+	
+</body>
+</html>
