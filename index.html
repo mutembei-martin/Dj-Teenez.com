@@ -60,7 +60,12 @@
 
   </div>	
   
-  <div id="name" class="active">Dj Teenez
+ <div id="name">
+
+  		<object>
+			<embed id="name1" src="media/tttt.svg">	
+			</object>
+
 
   </div>	
   <div id="am">Explore...</div>
@@ -145,17 +150,17 @@ $("#am").click(function(e){
 				$("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
 				$("#name").animate({opacity:"0"}, {duration: 1000});
 				if (innerWidth > 750) {
-				$("#name").animate({fontSize:"3em"}, {duration: 1500});
+				$("#name").animate({height:"8%"}, {duration: 1500});
 				$("#home").animate({left:"15%"}, {duration: 1000});
 				$("#home").animate({width:"70%"}, {duration: 1000});
-				$("#name").animate({left:"25%"}, {duration: 2000});
-				$("#name").animate({top:"35%"}, {duration: 1500});
+				$("#name").animate({left:"-36%"}, {duration: 2000});
+				$("#name").animate({top:"34%"}, {duration: 1500});
 			}else{
 				$(".crights").animate({zIndex:"1"}, {duration: 1500});
 				$(".terms").animate({zIndex:"1"}, {duration: 1500});
-				$("#name").animate({fontSize:"2.5em"}, {duration: 1500});
-				$("#name").animate({left:"25%"}, {duration: 2000});
-				$("#name").animate({top:"35%"}, {duration: 1500});
+				$("#name").animate({height:"8%"}, {duration: 1500});
+				$("#name").animate({left:"-30%"}, {duration: 2000});
+				$("#name").animate({top:"34%"}, {duration: 1500});
 			}
 
 				$("#name").animate({opacity:"1"}, {duration: 2500});
