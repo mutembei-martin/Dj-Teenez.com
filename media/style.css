@@ -488,7 +488,7 @@ color: #000;
 @media screen and (max-width: 750px) {
 
   .btn-menu{
-  top: 30px;
+  top: 40px;
 }
 
 #home {
@@ -501,7 +501,7 @@ color: #000;
 
   #logo{
     right:0%;
-    top: 10px;
+    top: 20px;
     z-index: 4;
     transform: scale(.85);
 
