@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+@font-face {
+    font-family: 'Elephant';
+    src: url('Elephant-Regular.eot');
+    src: url('Elephant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Elephant-Regular.woff2') format('woff2'),
+        url('Elephant-Regular.woff') format('woff'),
+        url('Elephant-Regular.ttf') format('truetype'),
+        url('Elephant-Regular.svg#Elephant-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+	.st0{fill:none;}
+	.st1{stroke:#E6E6E6;stroke-width:5;stroke-miterlimit:10;}
+	.st2{font-family:'Elephant'; }
+	.st3{font-size:150px;}
+</style>
+<rect x="211" y="380.6" class="st0" width="1476" height="378"/>
+<text transform="matrix(1 0 0 1 513.7788 489.9194)" class="st1 st2 st3">Dj | Teenez</text>
+</svg>
