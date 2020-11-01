@@ -9,10 +9,10 @@
 
 
     $('#body').backstretch([
-       "images/12.png", 
-       "images/8.png",
-       "images/9.png",
-        "images/17.png",
+       "12.jpg", 
+       "8.png",
+       "9.png",
+        "17.png",
         ],  {duration: 10000, fade: 2000});
 
     });
