@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#009999;stroke-width:40;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#999;stroke-width:40;stroke-miterlimit:10;}
 	.st0{stroke-dasharray: 500; stroke-dashoffset:0; animation:dash 3s linear forwards;animation-iteration-count: infinite;}
-	.st1{fill:none;stroke:#009999;stroke-width:38;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#999;stroke-width:38;stroke-miterlimit:10;}
 	.st1{stroke-dasharray: 500; stroke-dashoffset:0; animation:dasha 3s linear forwards;animation-iteration-count: infinite;}
-	.st2{fill:none;stroke:#009999;stroke-width:33;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#999;stroke-width:33;stroke-miterlimit:10;}
 	.st2{stroke-dasharray: 500; stroke-dashoffset:0; animation:dash 3s linear forwards; animation-iteration-count: infinite;}
-	.st3{fill:none;stroke:#009999;stroke-width:22;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#999;stroke-width:22;stroke-miterlimit:10;}
 	.st3{stroke-dasharray: 500; stroke-dashoffset:0; animation:dash 3s linear forwards;animation-iteration-count: infinite;}
 
 		@-webkit-keyframes dash{
