@@ -15,6 +15,17 @@
         "media/17.png",
         ],  {duration: 10000, fade: 2000});
 
+
+
+    if (innerWidth < 750) {
+    	$('#home').backstretch([ 
+       	"media/12.jpg", 
+       	"media/8.png",
+       	"media/9.png",
+        "media/17.png",
+        ],  {duration: 10000, fade: 2000});
+    }
+
     });
 
   })

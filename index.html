@@ -9,9 +9,29 @@
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="media/style.css">
+	<link rel="stylesheet" href="media/et-line-font.css">
+	
 
 </head>
 <body>
+
+
+	<div id ="hidmenu">
+		<div id ="hidhome">
+	
+		</div>
+		<div id ="hidmix">
+			
+		</div>
+		<div id ="hidwork">
+			
+		</div>
+		<div id ="hidctct">
+			
+		</div>
+
+		
+	</div>
 
 <div class="btn-menu">
 		<div class="lines">
@@ -126,11 +146,85 @@ window.onload = function(){
 $(document).ready(function(){
 
 
-$("#home").delay(2000).fadeIn();
-$("#name").delay(2300).fadeIn();
-$("#mix").delay(2700).fadeIn();
-$("#work").delay(2700).fadeIn();
-$("#contact").delay(2800).fadeIn();
+
+	var counter = 0;
+
+
+$("#home").delay(3000).fadeIn();
+$("#name").delay(3300).fadeIn();
+$("#mix").delay(3700).fadeIn();
+$("#work").delay(3700).fadeIn();
+$("#contact").delay(3800).fadeIn();
+$("#middlebar").delay(3800).fadeOut();
+
+
+
+$(".btn-menu").click(function(e){
+	e.preventDefault(); 
+
+		counter ++; 
+
+if (counter == 1) {
+	$('head').append('<style>.btn-menu .lines span:nth-child(1){transform: rotate(120deg);} .btn-menu .lines span:nth-child(2){width:80%;transform: rotate(40deg);} .btn-menu .lines span:nth-child(3){transform: translateY(-6px);opacity: 0}</style>');
+
+	if (innerWidth > 900) {
+
+		$("#home").animate({left:"-45%"}, {duration: 1500});
+		$("#mix").delay(400).animate({left:"-60%"}, {duration: 1500});
+		$("#work").delay(200).animate({left:"-50%"}, {duration: 1500});
+		$("#contact").delay(400).animate({left:"-50%"}, {duration: 1500});
+
+}else if (innerWidth > 750) {
+
+		$("#home").animate({left:"-50%"}, {duration: 1500});
+		$("#mix").delay(400).animate({left:"-60%"}, {duration: 1500});
+		$("#work").delay(200).animate({left:"-50%"}, {duration: 1500});
+		$("#contact").delay(400).animate({left:"-50%"}, {duration: 1500});
+}else{
+		$("#home").delay(800).fadeOut();
+		$("#mix").delay(600).fadeOut();
+		$("#work").delay(400).fadeOut();
+		$("#contact").delay(200).fadeOut();
+}
+
+		$("#hidhome").delay(1800).animate({marginLeft:"0px"}, {duration: 500});
+		$("#hidmix").delay(2200).animate({marginLeft:"0px"}, {duration: 500});
+		$("#hidwork").delay(2400).animate({marginLeft:"0px"}, {duration: 500});
+		$("#hidctct").delay(2800).animate({marginLeft:"0px"}, {duration: 500});
+
+
+
+
+
+
+}else{
+	counter = 0;
+	$('head').append('<style>.btn-menu .lines span:nth-child(1){transform: rotate(0deg);} .btn-menu .lines span:nth-child(2){width:60%;transform: rotate(0deg);} .btn-menu .lines span:nth-child(3){transform: translateY(0px);opacity: 1}</style>');
+		$("#hidhome").delay(400).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidmix").delay(800).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidwork").delay(200).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidctct").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
+
+if (innerWidth > 750) {
+		$("#home").delay(1600).animate({left:"25%"}, {duration: 1500});
+		$("#mix").delay(1800).animate({left:"5%"}, {duration: 1500});
+		$("#work").delay(2000).animate({left:"35%"}, {duration: 1500});
+		$("#contact").delay(1800).animate({left:"48%"}, {duration: 1500});
+
+}else{
+		$("#home").delay(1800).fadeIn();
+		$("#mix").delay(2200).fadeIn();
+		$("#work").delay(2200).fadeIn();
+		$("#contact").delay(2200).fadeIn();
+}
+
+}
+
+	
+
+	console.log(counter);
+
+});
 
 
 

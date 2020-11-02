@@ -45,6 +45,68 @@ body {
 home section
 ========================================================================== */
 
+
+#hidmenu{
+  position: absolute;
+  left: 35px;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  width: 60px;
+  height: 35vh;
+  background: transparent;
+
+}
+#hidhome{
+  width: 60px;
+  height: 20%;
+  margin-top: 10%;
+  margin-left: -65px;
+  background: #0ff;
+  background-image: url("images4.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#hidmix{
+  width: 60px;
+  height: 20%;
+  margin-top: 10%;
+  margin-left: -65px;
+ background-image: url("images1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#hidwork{
+  width: 60px;
+  height: 20%;
+  margin-top: 10%;
+  margin-left: -65px;
+   background-image: url("images2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#hidctct{
+  width: 60px;
+  height: 20%;
+  margin-top: 10%;
+  margin-left: -65px;
+ background-image: url("images3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 .btn-menu{
   position: absolute;
   width: auto;
@@ -65,10 +127,16 @@ home section
 .btn-menu .lines span{position:relative;display:block;height:3px;background:#999999;float:right;}
 
 .btn-menu .lines span:nth-child(1){margin-top:3px;width:80%;}
+/*.btn-menu .lines:hover span:nth-child(1){transform: rotate(120deg);}*/
+
 
 .btn-menu .lines span:nth-child(2){margin-top:3px;width:60%}
+/*.btn-menu .lines:hover span:nth-child(2){width:80%;transform: rotate(40deg);}*/
 
-.btn-menu .lines span:nth-child(3){margin-top:3px;width:50%}
+
+.btn-menu .lines span:nth-child(3){margin-top:3px;width:50%;}
+/*.btn-menu .lines:hover span:nth-child(3){transform: translateY(-6px);opacity: 0}*/
+
 .menutext{
   position: relative;
   text-decoration: none;
@@ -154,7 +222,7 @@ home section
 #home {
     width: 45%;
     height: 100vh;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 2px #FFF;
     position: absolute;
     top: 0;
   left: 25%;
@@ -317,7 +385,7 @@ home section
     width: 60%;
     top: 15%;
     height: 70vh;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 2px #FFF;
     position: absolute;
   left: 5%;
  background-image: url("12.jpg");
@@ -355,7 +423,7 @@ home section
     width: 50%;
     top: 12%;
     height: 76vh;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 2px #FFF;
     position: absolute;
   left: 35%;
  background-image: url("12.jpg");
@@ -391,7 +459,7 @@ home section
     width: 50%;
     top: 20%;
     height: 60vh;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 2px #FFF;
     position: absolute;
   left: 48%;
  background-image: url("12.jpg");
@@ -446,6 +514,7 @@ home section
   height: 150px;
 }
 
+
 #home {
     width: 50%;
     height: 100vh;
@@ -458,6 +527,11 @@ home section
 
 @media screen and (max-width: 750px) {
 
+
+#hidmenu{
+  top: 30%;
+
+}
   .btn-menu{
   top: 40px;
 }
@@ -467,8 +541,8 @@ home section
   
 }*/
 #middlebar{
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
 }
 
 
