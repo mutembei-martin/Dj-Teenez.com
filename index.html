@@ -126,11 +126,11 @@ window.onload = function(){
 $(document).ready(function(){
 
 
-$("#home").delay(5000).fadeIn();
-$("#name").delay(5300).fadeIn();
-$("#mix").delay(5700).fadeIn();
-$("#work").delay(5700).fadeIn();
-$("#contact").delay(5800).fadeIn();
+$("#home").delay(4000).fadeIn();
+$("#name").delay(4300).fadeIn();
+$("#mix").delay(4700).fadeIn();
+$("#work").delay(4700).fadeIn();
+$("#contact").delay(4800).fadeIn();
 
 
 
@@ -139,11 +139,17 @@ $("#contact").delay(5800).fadeIn();
 
 				$("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
 				$("#name").animate({opacity:"0"}, {duration: 1000});
-				if (innerWidth > 750) {
+			if (innerWidth > 1100) {
 				$("#name").animate({height:"8%"}, {duration: 1500});
 				$("#home").animate({left:"15%"}, {duration: 1000});
 				$("#home").animate({width:"70%"}, {duration: 1000});
 				$("#name").animate({left:"-30%"}, {duration: 2000});
+				$("#name").animate({top:"34%"}, {duration: 1500});
+			}else if(innerWidth > 750){
+				$("#name").animate({height:"6%"}, {duration: 1500});
+				$("#home").animate({left:"15%"}, {duration: 1000});
+				$("#home").animate({width:"70%"}, {duration: 1000});
+				$("#name").animate({left:"-24%"}, {duration: 2000});
 				$("#name").animate({top:"34%"}, {duration: 1500});
 			}else{
 				$(".crights").animate({zIndex:"1"}, {duration: 1500});
