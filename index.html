@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="media/style.css">
 
 </head>
-<body id="body">
+<body>
 
 <div class="btn-menu">
 		<div class="lines">
@@ -27,22 +27,12 @@
 			<embed id="logo1" src="media/logoo.svg">	
 			</object>
   </div>
-	<!-- <div id="middlebar">
-			<div class="mt">	
-				<div class="name1"><span class="marto">MARTIN</span></div>
-				<div class="projects"></div>
-			</div>
-	
-			<div class="mb">
-				<div class="about"></div>
-				<div class="name2"><span class="tembe">MUTEMBEI</span></div>
-			</div>	
-	
-			<div class="work">
-				
-			</div>
+	<div id="middlebar">
+			<object>
+			<embed id="logo2" src="media/logo.svg">	
+			</object>
 		</div>
-			 -->
+			
 
 	<div class="bottombar">
 		<div class="crights">Copyright © Dj Teenez | 2020</div>
@@ -136,9 +126,17 @@ window.onload = function(){
 $(document).ready(function(){
 
 
+$("#home").delay(5000).fadeIn();
+$("#name").delay(5300).fadeIn();
+$("#mix").delay(5700).fadeIn();
+$("#work").delay(5700).fadeIn();
+$("#contact").delay(5800).fadeIn();
+
 
 
 	$("#am").click(function(e){
+	e.preventDefault(); 
+
 				$("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
 				$("#name").animate({opacity:"0"}, {duration: 1000});
 				if (innerWidth > 750) {

@@ -8,11 +8,11 @@
     jQuery(document).ready(function() {
 
 
-    $('#body').backstretch([
-       "12.jpg", 
-       "8.png",
-       "9.png",
-        "17.png",
+    $('body').backstretch([ 
+       "media/12.jpg", 
+       "media/8.png",
+       "media/9.png",
+        "media/17.png",
         ],  {duration: 10000, fade: 2000});
 
     });

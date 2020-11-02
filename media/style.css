@@ -11,6 +11,20 @@
     font-display: swap;
 }
 
+
+@font-face {
+    font-family: 'Elephant';
+    src: url('Elephant-Regular.eot');
+    src: url('Elephant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Elephant-Regular.woff2') format('woff2'),
+        url('Elephant-Regular.woff') format('woff'),
+        url('Elephant-Regular.ttf') format('truetype'),
+        url('Elephant-Regular.svg#Elephant-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
   position: relative;
     height: 100vh;
@@ -77,91 +91,8 @@ home section
   top: 20px;
 }
 }
-.rtopbar{
-  position: absolute;
-  width:35px;
-  height: 30px;
-  top: 35px;
-  float: right;
-  right: 4%;
-  background: transparent;
-}
-.rtopbar img{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-#middlebar{
-  position: absolute;
-  width: 100%;
-  height: 30%;
-  top:35%;
-  background:transparent;
-}
-
-.mt{
-  width: 100%;
-  height: 100px;
-  background:transparent;
-}
-.name1{
-  width: 45%;
-  margin-left: 20%;
-  height: 100%;
-  text-align:center;
-  font-size: 5em;
-  line-height: 100px;
-  font-weight: bold;
-  float: left;
-color: #000;
-  border-bottom: 2px solid #000;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-}
-.projects{
-  width:30%;
-  height: 104%;
-  float: right;
-  background: transparent;
-}
 
 
-.mb{
-  width: 100%;
-  height: 100px;
-  background: transparent;
-}
-
-.about{
-  width: 30%;
-  height: 100px;
-  float: left;
-  background: transparent;
-}
-.name2{
-  width: 45%;
-  height: 100%;
-  margin-left: 44%;
-  margin-top: 2px;
-  text-align: center;
-  font-size: 5em;
-  line-height: 100px;
-  font-weight: bold;
-  color: #000;
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-
-}
-
-.work{
-  width: 100%;
-  height: 60px;
-  margin-top: 40px;
-  float: right;
-  background:transparent;
-}
 
 
 .bottombar{
@@ -197,6 +128,7 @@ color: #000;
   text-align: center;
   line-height: 60px;
   cursor: pointer;
+  visibility: hidden;
 }
 .terms{
   position: absolute;
@@ -213,6 +145,22 @@ color: #000;
 }
 
 
+#middlebar{
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:transparent;
+}
+
+#logo2{
+
+    width: 100%;
+    height: 100%;
+
+}
 
 #home {
     width: 45%;
@@ -231,6 +179,7 @@ color: #000;
   background-size: cover;
   z-index: 3;
   cursor: pointer;
+  display: none;
 
 }
 
@@ -256,7 +205,7 @@ color: #000;
     background: transparent;
 }
 
-#logo{
+#logo1{
     width: 50px;
     height: 50px;
 }
@@ -269,6 +218,7 @@ color: #000;
   top: 40%;
  left:-5%;
   background:transparent;
+  display: none;
  /* font-size: 5em;
   text-align: center;
   font-family: elephant;
@@ -353,6 +303,7 @@ color: #000;
   text-align: left;
   line-height: 1.5;
   letter-spacing: 1px;
+  margin-top: 2%;
   margin-left: 7%;
   text-transform: uppercase;
 }
@@ -389,6 +340,8 @@ color: #000;
   background-size: cover;
   z-index: 2;
   cursor: pointer;
+  display: none;
+
 
 }
 
@@ -401,7 +354,7 @@ color: #000;
   font-size: 2.5em;
   text-align: left;
   padding-left: 10%;
-  font-family: elephant;
+  font-family:'Elephant';
   text-decoration: underline;
   color: #009999;
 }
@@ -424,6 +377,8 @@ color: #000;
   background-size: cover;
   z-index: 2;
   cursor: pointer;
+  display: none;
+
 
 }
 
@@ -437,7 +392,7 @@ color: #000;
   font-size: 2.5em;
   text-align: center;
   padding-left: 10%;
-  font-family: elephant;
+  font-family: 'Elephant';
   text-decoration: underline;
   color: #009999;
 }
@@ -459,6 +414,8 @@ color: #000;
   background-size: cover;
   z-index: 1;
   cursor: pointer;
+  display: none;
+
 }
 
 #ctct{
@@ -470,7 +427,7 @@ color: #000;
   background:transparent;
   font-size: 2.5em;
   text-align: right;
-  font-family: elephant;
+  font-family:'Elephant';
   text-decoration: underline;
   color: #009999;
 
@@ -487,6 +444,11 @@ color: #000;
 
 @media screen and (max-width: 900px) {
 
+  #middlebar{
+  width: 250px;
+  height: 150px;
+}
+
 #home {
     width: 50%;
     height: 100vh;
@@ -502,6 +464,16 @@ color: #000;
   .btn-menu{
   top: 40px;
 }
+
+/*#body{
+  background: #000;
+  
+}*/
+#middlebar{
+  width: 300px;
+  height: 200px;
+}
+
 
 #home {
     width: 100%;
@@ -534,6 +506,6 @@ color: #000;
 @media screen and (max-width: 500px) {
 
 .bottombar{
-  font-size: 14px;
+  font-size: 13px;
 }
 }
