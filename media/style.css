@@ -65,8 +65,36 @@ home section
   color: #999999;
   text-align: center;
   cursor: pointer;
-  border-bottom: 2px solid #999;
+  /*border-bottom: 2px solid #999;*/
   font-size: 2.7em;
+
+}
+
+#hidhome:before{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 20%;
+  margin-left: -5px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  transition: .4s;
+  z-index: 1;
+  
+
+}
+#hidhome:hover:before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 20%;
+  margin-left: -3px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  z-index: 1;
+  
 
 }
 
@@ -83,10 +111,38 @@ home section
   color: #999999;
   text-align: center;
   cursor: pointer;
-  border-bottom: 2px solid #999;
+  /*border-bottom: 2px solid #999;*/
   font-size: 2.5em;
 
 }
+#hidmix:before{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 20%;
+  margin-left: -5px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  transition: .4s;
+  z-index: 1;
+  
+
+}
+#hidmix:hover:before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 20%;
+  margin-left: -3px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  z-index: 1;
+  
+
+}
+
 #hidwork{
   width: 60px;
   height: 20%;
@@ -96,9 +152,39 @@ home section
   color: #999999;
   text-align: center;
   cursor: pointer;
-  border-bottom: 2px solid #999;
+  /*border-bottom: 2px solid #999;*/
   font-size: 2em;
 }
+
+#hidwork:before{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 20%;
+  margin-left: -5px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  transition: .4s;
+  z-index: 1;
+  
+
+}
+
+#hidwork:hover:before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 20%;
+  margin-left: -3px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  z-index: 1;
+  
+
+}
+
 #hidctct{
   width: 60px;
   height: 25%;
@@ -109,10 +195,40 @@ home section
   text-align: center;
   cursor: pointer;
   padding-bottom: -4%;
-  border-bottom: 2px solid #999;
+  /*border-bottom: 2px solid #999;*/
   font-size: 2.7em;
 
 }
+
+#hidctct:before{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 25%;
+  margin-left: -3px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  transition: .4s;
+  z-index: 1;
+  
+
+}
+
+#hidctct:hover:before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 25%;
+  margin-left: -3px;
+  margin-top: 0;
+  border-bottom: 2px solid #999;
+  background: transparent;
+  z-index: 1;
+  
+
+}
+
 
 .btn-menu{
   position: absolute;
@@ -411,14 +527,14 @@ home section
 }
 
 #mymix{
-  width: 100%;
+  width: 80%;
     height: auto;
     position:relative;
     top: 10%;
   background:transparent;
   font-size: 2.5em;
   text-align: left;
-  padding-left: 10%;
+ margin-left: 10%;
   font-family:'Elephant';
   text-decoration: underline;
   color: #009999;
@@ -449,11 +565,11 @@ home section
 
 
 #mysvc{
-  width: 100%;
+  width: 80%;
     height: auto;
     position:relative;
     top: 10%;
-    left: -10%;
+    left: 10%;
   background:transparent;
   font-size: 2.5em;
   text-align: right;
@@ -484,11 +600,10 @@ home section
 }
 
 #ctct{
-  width: 100%;
-    height: auto;
-    position:relative;
-    top: 10%;
-    right: 5%;
+  width: 90%;
+  height: auto;
+  position:relative;
+  top: 10%;
   background:transparent;
   font-size: 2.5em;
   text-align: right;

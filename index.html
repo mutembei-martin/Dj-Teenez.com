@@ -152,6 +152,8 @@ $(document).ready(function(){
 
 
 	var counter = 0;
+	var amcounter = 0;
+
 
 
 $("#home").delay(3000).fadeIn();
@@ -173,14 +175,29 @@ if (counter == 1) {
 
 	if (innerWidth > 900) {
 
+				if (amcounter == 1) {
+
+		$("#home").animate({left:"-70%"}, {duration: 1500});
+
+				}else{
+
 		$("#home").animate({left:"-45%"}, {duration: 1500});
+
+				}
 		$("#mix").delay(400).animate({left:"-70%"}, {duration: 1500});
 		$("#work").delay(200).animate({left:"-60%"}, {duration: 1500});
 		$("#contact").delay(400).animate({left:"-70%"}, {duration: 1500});
 
 }else if (innerWidth > 750) {
+				if (amcounter == 1) {
+
+		$("#home").animate({left:"-70%"}, {duration: 1500});
+
+				}else{
 
 		$("#home").animate({left:"-50%"}, {duration: 1500});
+
+				}
 		$("#mix").delay(400).animate({left:"-70%"}, {duration: 1500});
 		$("#work").delay(200).animate({left:"-60%"}, {duration: 1500});
 		$("#contact").delay(400).animate({left:"-70%"}, {duration: 1500});
@@ -210,10 +227,18 @@ if (counter == 1) {
 		$("#hidctct").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
 
 if (innerWidth > 750) {
-		$("#home").delay(1600).animate({left:"25%"}, {duration: 1500});
-		$("#mix").delay(1800).animate({left:"5%"}, {duration: 1500});
-		$("#work").delay(2000).animate({left:"25%"}, {duration: 1500});
-		$("#contact").delay(1800).animate({left:"28%"}, {duration: 1500});
+	if (amcounter == 1) {
+
+		$("#home").delay(1700).animate({left:"15%"}, {duration: 2500});
+
+				}else{
+
+		$("#home").delay(1700).animate({left:"25%"}, {duration: 1500});
+
+				}
+		$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+		$("#work").delay(2200).animate({left:"25%"}, {duration: 1500});
+		$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
 
 }else{
 		$("#home").delay(1800).fadeIn();
@@ -234,6 +259,9 @@ if (innerWidth > 750) {
 
 	$("#am").click(function(e){
 	e.preventDefault(); 
+
+		amcounter ++;
+
 
 				// $("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
 				$("#name").animate({opacity:"0"}, {duration: 1000});
@@ -266,6 +294,10 @@ if (innerWidth > 750) {
 
 
 				$("#texts").delay(2400).fadeIn("slow");
+
+
+
+				console.log(amcounter);
 
 
 		});
