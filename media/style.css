@@ -61,25 +61,30 @@ home section
   height: 20%;
   margin-top: 10%;
   margin-left: -65px;
-  background: #0ff;
-  background-image: url("images4.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
+  color: #999999;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid #999;
+  font-size: 2.7em;
 
 }
 
+#homelogo{
+   width: 50%;
+  height: 100%;
+}
 #hidmix{
   width: 60px;
   height: 20%;
   margin-top: 10%;
   margin-left: -65px;
- background-image: url("images1.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
+  color: #999999;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid #999;
+  font-size: 2.2em;
 
 }
 #hidwork{
@@ -87,23 +92,25 @@ home section
   height: 20%;
   margin-top: 10%;
   margin-left: -65px;
-   background-image: url("images2.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+ background: transparent;
+  color: #999999;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid #999;
+  font-size: 2em;
 }
 #hidctct{
   width: 60px;
-  height: 20%;
-  margin-top: 10%;
+  height: 25%;
+  margin-top: 5%;
   margin-left: -65px;
- background-image: url("images3.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
+  color: #999999;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: -4%;
+  border-bottom: 2px solid #999;
+  font-size: 2.7em;
 
 }
 
@@ -204,8 +211,8 @@ home section
 
 #middlebar{
   position: absolute;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -382,7 +389,7 @@ home section
 }
 
 #mix {
-    width: 60%;
+    width: 70%;
     top: 15%;
     height: 70vh;
     box-shadow: 0px 0px 2px #FFF;
@@ -420,12 +427,12 @@ home section
 
 
 #work {
-    width: 50%;
+    width: 60%;
     top: 12%;
     height: 76vh;
     box-shadow: 0px 0px 2px #FFF;
     position: absolute;
-  left: 35%;
+  left: 25%;
  background-image: url("12.jpg");
   /*background-size: 1366px 612px;*/
   /*background-position:50% 0;*/
@@ -456,12 +463,12 @@ home section
 }
 
 #contact{
-    width: 50%;
+    width: 70%;
     top: 20%;
     height: 60vh;
     box-shadow: 0px 0px 2px #FFF;
     position: absolute;
-  left: 48%;
+  left: 28%;
  background-image: url("12.jpg");
   opacity: 0.8;
   /*background-size: 1366px 612px;*/
@@ -481,7 +488,7 @@ home section
     height: auto;
     position:relative;
     top: 10%;
-    right: 10%;
+    right: 5%;
   background:transparent;
   font-size: 2.5em;
   text-align: right;

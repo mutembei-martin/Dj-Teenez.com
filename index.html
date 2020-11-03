@@ -20,16 +20,18 @@
 
 	<div id ="hidmenu">
 		<div id ="hidhome">
-	
+			<object>
+			<embed id="homelogo" src="media/home.svg">	
+			</object>	
 		</div>
 		<div id ="hidmix">
-			
+			&#9835;
 		</div>
 		<div id ="hidwork">
-			
+			&#128736;
 		</div>
 		<div id ="hidctct">
-			
+			&#9990;
 		</div>
 
 		
@@ -93,9 +95,9 @@
 			There is always an Experience worth Loving. </br>
 			An Experience we can Relate with Personally.</br>
 			Because Music touches the Soul. </br>
-			It Frees souls.And It Connect Souls. </br>
-			Prepare Yourself For a New Wave of Experiences. </br>
-			An Escape. A cool Paradise of Positive Vibrations.</br>
+			It Frees the soul.And It Connect Souls. </br>
+			Therefore, Prepare Yourself For a New Wave of Experiences. </br>
+			An Escape. A cool Haven of Positive Vibrations.</br>
 			Because When You Lose yourself in the Voodoo of Sessions by Dj Teenez, Then</br>
 			You'll have a Taste of What it Means, To Be Truly Free.....</br>
 
@@ -172,16 +174,16 @@ if (counter == 1) {
 	if (innerWidth > 900) {
 
 		$("#home").animate({left:"-45%"}, {duration: 1500});
-		$("#mix").delay(400).animate({left:"-60%"}, {duration: 1500});
-		$("#work").delay(200).animate({left:"-50%"}, {duration: 1500});
-		$("#contact").delay(400).animate({left:"-50%"}, {duration: 1500});
+		$("#mix").delay(400).animate({left:"-70%"}, {duration: 1500});
+		$("#work").delay(200).animate({left:"-60%"}, {duration: 1500});
+		$("#contact").delay(400).animate({left:"-70%"}, {duration: 1500});
 
 }else if (innerWidth > 750) {
 
 		$("#home").animate({left:"-50%"}, {duration: 1500});
-		$("#mix").delay(400).animate({left:"-60%"}, {duration: 1500});
-		$("#work").delay(200).animate({left:"-50%"}, {duration: 1500});
-		$("#contact").delay(400).animate({left:"-50%"}, {duration: 1500});
+		$("#mix").delay(400).animate({left:"-70%"}, {duration: 1500});
+		$("#work").delay(200).animate({left:"-60%"}, {duration: 1500});
+		$("#contact").delay(400).animate({left:"-70%"}, {duration: 1500});
 }else{
 		$("#home").delay(800).fadeOut();
 		$("#mix").delay(600).fadeOut();
@@ -210,8 +212,8 @@ if (counter == 1) {
 if (innerWidth > 750) {
 		$("#home").delay(1600).animate({left:"25%"}, {duration: 1500});
 		$("#mix").delay(1800).animate({left:"5%"}, {duration: 1500});
-		$("#work").delay(2000).animate({left:"35%"}, {duration: 1500});
-		$("#contact").delay(1800).animate({left:"48%"}, {duration: 1500});
+		$("#work").delay(2000).animate({left:"25%"}, {duration: 1500});
+		$("#contact").delay(1800).animate({left:"28%"}, {duration: 1500});
 
 }else{
 		$("#home").delay(1800).fadeIn();
@@ -233,29 +235,29 @@ if (innerWidth > 750) {
 	$("#am").click(function(e){
 	e.preventDefault(); 
 
-				$("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
+				// $("#pic").delay(2700).animate({opacity:"1"}, {duration: 4000});
 				$("#name").animate({opacity:"0"}, {duration: 1000});
 			if (innerWidth > 1100) {
 				$("#name").animate({height:"8%"}, {duration: 1500});
 				$("#home").animate({left:"15%"}, {duration: 1000});
 				$("#home").animate({width:"70%"}, {duration: 1000});
-				$("#name").animate({left:"-30%"}, {duration: 2000});
-				$("#name").animate({top:"34%"}, {duration: 1500});
+				$("#name").animate({left:"-30%"}, {duration: 500});
+				$("#name").animate({top:"34%"}, {duration: 500});
 			}else if(innerWidth > 750){
 				$("#name").animate({height:"6%"}, {duration: 1500});
 				$("#home").animate({left:"15%"}, {duration: 1000});
 				$("#home").animate({width:"70%"}, {duration: 1000});
-				$("#name").animate({left:"-24%"}, {duration: 2000});
-				$("#name").animate({top:"34%"}, {duration: 1500});
+				$("#name").animate({left:"-24%"}, {duration: 500});
+				$("#name").animate({top:"34%"}, {duration: 500});
 			}else{
 				$(".crights").animate({zIndex:"1"}, {duration: 1500});
 				$(".terms").animate({zIndex:"1"}, {duration: 1500});
-				$("#name").animate({height:"6%"}, {duration: 1500});
-				$("#name").animate({left:"-17%"}, {duration: 2000});
-				$("#name").animate({top:"35%"}, {duration: 1500});
+				$("#name").animate({height:"6%"}, {duration: 500});
+				$("#name").animate({left:"-17%"}, {duration: 500});
+				$("#name").animate({top:"35%"}, {duration: 500});
 			}
 
-				$("#name").animate({opacity:"1"}, {duration: 2500});
+				$("#name").animate({opacity:"1"}, {duration: 1500});
 				$("#signature").delay(4000).animate({opacity:"1"}, {duration: 1000});
 
 
