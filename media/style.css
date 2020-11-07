@@ -505,7 +505,7 @@ home section
 }
 
 #mix {
-    width: 70%;
+    width: 65%;
     top: 15%;
     height: 70vh;
     box-shadow: 0px 0px 2px #FFF;
@@ -533,14 +533,143 @@ home section
     top: 10%;
   background:transparent;
   font-size: 2.5em;
-  text-align: left;
  margin-left: 10%;
+  text-align: left;
   font-family:'Elephant';
   text-decoration: underline;
   color: #009999;
 }
+#recmix{
+    width: 47%;
+    height: 52vh;
+    position:relative;
+    top: 10vh;
+    float: left;
+    margin-left: 1%;
+    background:transparent;
+}
+#rec{
+    width: 95%;
+    height: 40px;
+    position:relative;
+    /*top: 8vh;*/
+    background:transparent;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 5%;
+    font-family:cursive, sans-serif;
+}
 
 
+#rec1{
+    width: 100%;
+    height: 80px;
+    position:relative;
+    margin-top: 10px;
+    background:#0ff;
+}
+
+#rec1vid{
+    width: 30%;
+    height: 80px;
+    border-right: 2px solid #000;
+    position:relative;
+    float: left;
+    background:transparent;
+}
+
+#rec2vid{
+    width: 30%;
+    height: 80px;
+    border-right: 2px solid #000;
+    position:relative;
+    float: left;
+    background:transparent;
+}
+
+#rec3vid{
+    width: 30%;
+    height: 80px;
+    border-right: 2px solid #000;
+    position:relative;
+    float: left;
+    background:transparent;
+}
+
+#rec4vid{
+    width: 30%;
+    height: 80px;
+    border-right: 2px solid #000;
+    position:relative;
+    float: left;
+    background:transparent;
+}
+
+
+#rec2{
+    width: 100%;
+    height: 80px;
+    position:relative;
+    margin-top: 20px;
+    background:#0ff;
+    /*display: none;*/
+
+}
+
+
+#rec3{
+    width: 100%;
+    height: 80px;
+    position:relative;
+    margin-top: 20px;
+    background:#0ff;
+    /*display: none;*/
+
+}
+#rec4{
+    width: 100%;
+    height: 80px;
+    position:relative;
+    margin-top: 20px;
+    background:#0ff;
+    /*display: none;*/
+
+}
+
+
+#playlistmix{
+    width: 50%;
+    height: 62vh;
+    position:relative;
+    top: 0;
+    float: right;
+    background:transparent;
+}
+#plist{
+   width: 95%;
+    height: 40px;
+    position:absolute; 
+    /*top: 8vh;*/
+    background:transparent;
+    color: #fff;
+    font-size: 1.9em;
+    text-align: center;
+    line-height: 40px;
+    padding-left: 5%;
+    text-decoration: underline;
+    font-family:cursive, sans-serif;
+    z-index: 1;
+}
+
+#plistscroll{
+  margin-top: 48px;
+    width: 100%;
+    height: 55vh;
+    overflow-y: scroll; 
+    background:transparent;
+}
 
 #work {
     width: 60%;
@@ -577,6 +706,63 @@ home section
   text-decoration: underline;
   color: #009999;
 }
+#svcs{
+  width: 100%;
+    height: 60vh;
+     margin-top: 7%;
+  background:transparent;
+  color: #fff;
+  font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
+
+}
+
+#available{
+    width: 95%;
+    height: 60px;
+    position:relative;
+    top: 4vh;
+    background:transparent;
+    color: #fff;
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-align: right;
+    line-height: 60px;
+    padding-right:  5%;
+    font-family:cursive, sans-serif;
+}
+
+#Personal{
+    width: 50%;
+    height: 48vh;
+    position:relative;
+    top: 4vh;
+    background:transparent;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: left;
+    float: left;
+    /*overflow-y: scroll; */
+    margin-left: -5%;
+  font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
+
+}
+
+#Corporate{
+    width: 50%;
+    height: 48vh;
+    position:relative;
+    top: 4vh;
+    background:transparent;
+    float: right;
+    padding-right: 5%;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: right;
+    /*overflow-y: scroll; */
+  font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
+
+}
+
 
 #contact{
     width: 70%;
@@ -584,7 +770,7 @@ home section
     height: 60vh;
     box-shadow: 0px 0px 2px #FFF;
     position: absolute;
-  left: 28%;
+  left: 25%;
  background-image: url("12.jpg");
   opacity: 0.8;
   /*background-size: 1366px 612px;*/
@@ -613,6 +799,44 @@ home section
 
 }
 
+#ctcs{
+  width: 100%;
+    height: 40vh;
+     margin-top: 5%;
+  background:transparent;
+   font-size: 1.6em;
+  color: #000;
+
+}
+#social{
+  width: 65%;
+  height: 10vh;
+  margin-top: 15vh;
+  background:#fff;
+  float: left;
+  font-size: 1.6em;
+  color: #000;
+
+}
+#find{
+  width: 30%;
+  height: 35vh;
+  background:transparent;
+  float: right;
+  text-align: center;
+  line-height: 15vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-left:2px solid #fff;
+  padding-top: 5vh;
+  font-size: 1.8em;
+  color: #fff;
+  /*font-family: cursive, sans-serif;*/
+  font-weight: bold;
+
+}
+
+
 @media screen and (max-width: 1300px) {
 #name{
  transform: scale(1.1);
@@ -623,6 +847,15 @@ home section
     top: 20px;
     z-index: 4;
     transform: scale(.9);
+
+}
+ #Personal{
+    font-size: 1.15em;
+
+}
+
+#Corporate{
+    font-size: 1.15em;
 
 }
 }
@@ -644,6 +877,16 @@ home section
     position: absolute;
     top: 0;
   left: 25%;  }
+
+  #Personal{
+    font-size: .9em;
+
+}
+
+#Corporate{
+    font-size: .9em;
+
+}
 
 }
 

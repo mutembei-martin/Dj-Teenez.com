@@ -118,21 +118,102 @@
 <section id="mix">
   	
 	<div id="mymix">My Mixes</div>
+	<div id="recmix">
+		<div id="rec">Recent...</div>
+
+		<div id="rec1">
+			<div id="rec1vid"></div>
+			
+		</div>
+
+
+		<div id="rec2">
+			
+			<div id="rec2vid"></div>
+
+		</div>
+		<div id="rec3">
+			
+			<div id="rec3vid"></div>
+
+		</div>
+
+	</div>
+
+
+
+	<div id="playlistmix">
+		<div id="plist">The PlayList...</div>
+
+		<div id="plistscroll">
+		<div id="rec1">
+			<div id="rec1vid"></div>
+			<div></div>
+		</div>
+
+		<div id="rec2">
+			<div id="rec2vid"></div>
+		</div>
+		<div id="rec3">
+			<div id="rec3vid"></div>
+		</div>
+		<div id="rec4">
+			<div id="rec4vid"></div>
+		</div>
+
+		</div>
+	</div>
 	
 </section>
 
 
 <section id="work">
 	<div id="mysvc">My Services</div>
+
+
   	
-	
+	<div id="svcs">
+			<div id="available">Dj | Teenez &#174; services :-</div>
+
+			 <ul style="list-style-type:none;">
+
+			 	<div id="Personal">
+			 		<ul style="list-style-type:none;">
+ 				 <li>&#9755;  Closed Parties</li></br>
+ 				 <li>&#9755;  House Parties</li></br>
+ 				 <li>&#9755;  Playlist Requests</li></br>
+ 				 <li>&#9755;  Contact For Extra Services.</li></br>
+ 				 	</ul> 
+			 	</div>
+
+
+			 	<div id="Corporate">
+			 		<ul style="list-style-type:none;">
+			 	<li>Night Clubs  &#9754;</li></br>
+ 				 <li>Corporate Events &#9754;</li></br>
+ 				 <li>Private Events  &#9754;</li></br>
+ 				 <li>Fun Festivals  &#9754;</li></br>
+ 				 	</ul> 
+			 	</div>
+
+
+
+		
+	</div>
 	
 </section>
 
 
 <section id="contact">
 	<div id="ctct">Contacts</div>
+
+	
   	
+	<div id="ctcs">
+		<div id="social"></div>
+		<div id="find">Find Me </br> On</div>
+
+	</div>
 	
 	
 </section>
@@ -153,6 +234,12 @@ $(document).ready(function(){
 
 	var counter = 0;
 	var amcounter = 0;
+	var hidmixcounter = 0;
+	var hidctctcounter = 0;
+	var mixcounter = 0;
+	var ctctcounter = 0;	
+
+
 
 
 
@@ -236,9 +323,55 @@ if (innerWidth > 750) {
 		$("#home").delay(1700).animate({left:"25%"}, {duration: 1500});
 
 				}
-		$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+
+
+
+				if (hidmixcounter == 1) {
+
+					if (mixcounter == 0) {
+						$("#mix").animate({opacity:"1"}, {duration: 1500});
+						$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+					}else{
+						$("#mix").animate({opacity:".8"}, {duration: 1500});
+						$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+					}
+
+				}else{
+					hidmixcounter = 0;
+					if (mixcounter == 0) {
+						$("#mix").animate({opacity:"1"}, {duration: 1500});
+						$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+					}else{
+						$("#mix").animate({opacity:".8"}, {duration: 1500});
+						$("#mix").delay(2000).animate({left:"5%"}, {duration: 1500});
+					}
+
+				}
+
+
 		$("#work").delay(2200).animate({left:"25%"}, {duration: 1500});
-		$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
+
+		if (hidctctcounter == 1) {
+
+					if (ctctcounter == 0) {
+						$("#contact").animate({opacity:"1"}, {duration: 1500});
+						$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
+					}else{
+						$("#contact").animate({opacity:".8"}, {duration: 1500});
+						$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
+					}
+
+				}else{
+					hidctctcounter = 0;
+				if (ctctcounter == 0) {
+						$("#contact").animate({opacity:"1"}, {duration: 1500});
+						$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
+					}else{
+						$("#contact").animate({opacity:".8"}, {duration: 1500});
+						$("#contact").delay(2400).animate({left:"28%"}, {duration: 1500});
+					}
+
+				}
 
 }else{
 		$("#home").delay(1800).fadeIn();
@@ -251,7 +384,7 @@ if (innerWidth > 750) {
 
 	
 
-	console.log(counter);
+	console.log(hidmixcounter);
 
 });
 
@@ -285,7 +418,7 @@ if (innerWidth > 750) {
 				$("#name").animate({top:"35%"}, {duration: 500});
 			}
 
-				$("#name").animate({opacity:"1"}, {duration: 1500});
+				$("#name").delay(3500).animate({opacity:"1"}, {duration: 1500});
 				$("#signature").delay(4000).animate({opacity:"1"}, {duration: 1000});
 
 
@@ -293,7 +426,7 @@ if (innerWidth > 750) {
 				$("#am").fadeOut("slow");
 
 
-				$("#texts").delay(2400).fadeIn("slow");
+				$("#texts").delay(4400).fadeIn("slow");
 
 
 
@@ -303,12 +436,163 @@ if (innerWidth > 750) {
 		});
 
 
+	$("#hidhome").click(function(){
 
+		$("#hidmix").delay(400).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidwork").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidctct").delay(800).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidhome").delay(1500).animate({marginLeft:"-65px"}, {duration: 1000});
+
+
+			if (amcounter == 1) {
+
+		$("#home").delay(1700).animate({left:"15%"}, {duration: 2500});
+
+				}else{
+
+		$("#home").delay(1700).animate({left:"25%"}, {duration: 1500});
+
+				}
+
+	})
+	
 	
 
 
+	$("#hidmix").click(function(){
+
+			hidmixcounter++;
 
 
+
+		$("#hidhome").delay(400).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidwork").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidctct").delay(800).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidmix").delay(1500).animate({marginLeft:"-65px"}, {duration: 1000});
+
+
+		$("#mix").delay(1700).animate({left:"15%"}, {duration: 2500});
+		$("#mix").animate({opacity:"1"}, {duration: 1500});
+
+
+
+		
+	});
+
+	$("#hidwork").click(function(){
+
+
+		$("#hidhome").delay(400).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidctct").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidmix").delay(800).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidwork").delay(1500).animate({marginLeft:"-65px"}, {duration: 1000});
+
+
+		$("#work").delay(1700).animate({left:"25%"}, {duration: 2500});
+
+
+
+		
+	});
+
+
+		$("#hidctct").click(function(){
+
+			hidctctcounter++;
+
+
+		$("#hidhome").delay(400).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidmix").delay(600).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidwork").delay(800).animate({marginLeft:"-65px"}, {duration: 1000});
+		$("#hidctct").delay(1500).animate({marginLeft:"-65px"}, {duration: 1000});
+
+
+
+		$("#contact").delay(1700).animate({left:"28%"}, {duration: 2500});
+		$("#contact").animate({opacity:"1"}, {duration: 1500});
+
+	
+	});
+
+		$("#home").click(function(e){
+
+				e.preventDefault();
+
+		$("#home").animate({zIndex:"4"}, {duration: 1000});
+		$("#mix").animate({opacity:".8"}, {duration: 1000});
+		$("#mix").animate({zIndex:"3"}, {duration: 1000});
+		$("#work").animate({zIndex:"2"}, {duration: 1000});
+		$("#contact").animate({opacity:".8"}, {duration: 1000});
+		$("#contact").animate({zIndex:"1"}, {duration: 1000});
+
+
+
+
+		
+	});
+
+
+		$("#mix").click(function(e){
+
+				e.preventDefault();
+
+			mixcounter++;
+
+			if (mixcounter == 1) {
+				mixcounter = 0;
+			}
+
+		$("#mix").animate({opacity:"1"}, {duration: 1000});
+		$("#mix").animate({zIndex:"4"}, {duration: 1000});
+		$("#work").animate({zIndex:"2"}, {duration: 1000});
+		$("#contact").animate({opacity:".8"}, {duration: 1000});
+		$("#contact").animate({zIndex:"1"}, {duration: 1000});
+		$("#home").animate({zIndex:"3"}, {duration: 1000});
+
+
+console.log(mixcounter)
+		
+	});
+
+		$("#work").click(function(e){
+
+				e.preventDefault();
+
+		$("#work").animate({zIndex:"4"}, {duration: 1000});
+		$("#mix").animate({opacity:".8"}, {duration: 1000});
+		$("#mix").animate({zIndex:"2"}, {duration: 1000});
+		$("#contact").animate({opacity:".8"}, {duration: 1000});
+		$("#contact").animate({zIndex:"1"}, {duration: 1000});
+
+
+
+
+		
+	});
+
+
+		$("#contact").click(function(e){
+
+				e.preventDefault();
+
+				ctctcounter++;
+
+			if (ctctcounter == 1) {
+				ctctcounter = 0;
+			}
+
+		$("#contact").animate({opacity:"1"}, {duration: 1000});
+		$("#contact").animate({zIndex:"4"}, {duration: 1000});
+		$("#home").animate({zIndex:"3"}, {duration: 1000});
+		$("#mix").animate({opacity:".8"}, {duration: 1000});
+		$("#mix").animate({zIndex:"2"}, {duration: 1000});
+		$("#work").animate({zIndex:"1"}, {duration: 1000});
+
+
+
+
+		
+	});
 
 });
 
