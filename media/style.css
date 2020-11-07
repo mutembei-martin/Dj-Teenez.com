@@ -554,7 +554,7 @@ home section
     position:absolute;
     /*top: 8vh;*/
     background:transparent;
-    color: #ff0000;
+    color: #fff;
     font-size: 1.4em;
     text-align: left;
     line-height: 40px;
@@ -562,10 +562,9 @@ home section
     font-family:cursive, sans-serif;
 }
 #recscroll{
-  margin-top: 10px;
+  margin-top: 38px;
     width: 100%;
     height: 42vh;
-    overflow: hidden;
     overflow-y: scroll; 
     background:transparent;
 }
@@ -671,10 +670,9 @@ home section
 }
 
 #plistscroll{
-  margin-top: 10px;
+  margin-top: 48px;
     width: 100%;
     height: 50vh;
-    overflow: hidden;
     overflow-y: scroll; 
     background:transparent;
 }
@@ -741,7 +739,7 @@ home section
 
 #Personal{
     width: 50%;
-    height: 40vh;
+    height: 45vh;
     position:relative;
     top: 4vh;
     background:transparent;
@@ -749,7 +747,6 @@ home section
     font-size: 1.4em;
     text-align: left;
     float: left;
-    overflow: hidden;
     overflow-y: scroll; 
     margin-left: -5%;
   font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
@@ -758,7 +755,7 @@ home section
 
 #Corporate{
     width: 50%;
-    height: 40vh;
+    height: 45vh;
     position:relative;
     top: 4vh;
     background:transparent;
@@ -767,7 +764,6 @@ home section
     color: #fff;
     font-size: 1.4em;
     text-align: right;
-    overflow: hidden;
     overflow-y: scroll; 
   font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
 
@@ -841,7 +837,6 @@ home section
   padding-top: 5vh;
   font-size: 1.8em;
   color: #fff;
-  overflow: hidden;
   overflow-y: scroll;
   /*font-family: cursive, sans-serif;*/
   font-weight: bold;
