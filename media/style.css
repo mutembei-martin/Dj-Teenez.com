@@ -686,7 +686,7 @@ home section
     position: absolute;
   left: 25%;
  background-image: url("12.jpg");
- overflow: hidden;
+/* overflow: hidden;*/
   /*background-size: 1366px 612px;*/
   /*background-position:50% 0;*/
   background-attachment: fixed;
@@ -749,6 +749,7 @@ home section
     font-size: 1.4em;
     text-align: left;
     float: left;
+    overflow: hidden;
     overflow-y: scroll; 
     margin-left: -5%;
   font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
@@ -766,6 +767,7 @@ home section
     color: #fff;
     font-size: 1.4em;
     text-align: right;
+    overflow: hidden;
     overflow-y: scroll; 
   font-family: "Cutive Mono", monospace,"Comic Sans MS", cursive, sans-serif;
 
