@@ -9,26 +9,18 @@
 
 
     $('body').backstretch([ 
-       "media/12.jpg", 
-       "media/8.png",
-       "media/9.png",
-        "media/17.png",
+       "media/13.jpg", 
+        "media/15.jpg",
+       "media/2.jpg",
+       "media/1.jpg",
+        "media/7.jpg",
+        "media/6.jpg"
         ],  {duration: 10000, fade: 2000});
 
-
-
-    if (innerWidth < 750) {
-    	$('#home').backstretch([ 
-       	"media/12.jpg", 
-       	"media/8.png",
-       	"media/9.png",
-        "media/17.png",
-        ],  {duration: 10000, fade: 2000});
-    }
 
     });
 
-  })
+  });
 
 
 
