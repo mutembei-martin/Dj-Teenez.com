@@ -179,7 +179,7 @@ top nav
   transform: translate(-50%,-50%);
   cursor: pointer;
   float: left;
-  font-size: 25px;
+  font-size: 20px;
   background: transparent;
   z-index: 1;
 
@@ -253,7 +253,7 @@ top nav
   transform: translate(-50%,-50%);
   height: 240px;
   width:60px;
-  background:#999;
+  background:transparent;
   z-index: 2;
 
 }
