@@ -211,7 +211,34 @@
 <div id="navright"></div>
 
 <div id ="middlebar">
+	<div id ="name">
 
+			<?xml version="1.0" encoding="utf-8"?>
+				<svg id ="name-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 			viewBox="0 0 200 100" style="enable-background:new 0 0 200 150;" xml:space="preserve">
+					<style type="text/css">
+						.st0z{fill:#fff;}
+						.st1z{font-family:'Elephant-Regular';}
+						.st2z{font-size:24px;
+						font-weight:bold;
+						}
+						.st3z{fill:none;}
+						.st4z{font-size:14px;
+							font-weight:bold;
+							fill:#fff;}
+					</style>
+						<text transform="matrix(1.4459 0 0 1 14 56.2173)" class="st0z st1z st2z">Dj | Teenez </text>
+						<rect x="182" y="27" class="st3" width="27" height="24"/>
+						<text transform="matrix(1 0 0 1 182 37.2061)" class="st1z st4z">®</text>
+				</svg>
+
+
+	</div>
+	<div id ="explore">
+		<div id ="explore-ico">
+			
+		</div>
+	</div>
 </div>
 
 
@@ -239,7 +266,7 @@
 			$("#topnav").fadeIn();
 			$("#navleft").fadeIn();
 
-		if (innerWidth < 750) {$("#navright").fadeIn();}	
+		// if (innerWidth < 750) {$("#navright").fadeIn();}	
 			
 			$("#middlebar").fadeIn();
 			$("#bottomnav").fadeIn();
@@ -318,11 +345,11 @@ $("#toggle").click(function(e){
 	e.preventDefault(); 
 	if (innerWidth>750) {
 		$("#toggle").animate({opacity:"0"});
-		$(".w3-input").delay(500).animate({opacity:"0"});
+		$(".w3-input").delay(200).animate({opacity:"0"});
 		$("#search-overlay").delay(500).fadeIn("slow");
-		$("#play").delay(250).fadeIn("slow");
-		$("#logo").delay(250).fadeIn("slow");
-		$("#volume").delay(250).fadeIn("slow");
+		$("#play").delay(750).fadeIn("slow");
+		$("#logo").delay(750).fadeIn("slow");
+		$("#volume").delay(750).fadeIn("slow");
 	}
 
 });

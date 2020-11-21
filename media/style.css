@@ -48,6 +48,7 @@ top nav
   width: 100%;
   background: transparent;
   display: none;
+  z-index: 2;
 }
 
 #menu{
@@ -379,10 +380,50 @@ top nav
   transform: translate(-50%,-50%);
   height: 200px;
   width: 60%;
-  background: #fff;
+  background: transparent;
   display: none;
 }
+#name{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  cursor: pointer;
+  background:transparent;
 
+}
+
+#name-svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 400%;
+  width: 400%;
+  cursor: pointer;
+}
+#explore{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  cursor: pointer;
+  background:transparent;
+
+}
+#explore-ico{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 400px;
+  cursor: pointer;
+  background:transparent;
+
+}
 #bottomnav{
   position: absolute;
   bottom: 0;
@@ -523,6 +564,16 @@ top nav
 }
 #middlebar{
   width: 100%;
+}
+
+#name-svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 150%;
+  width: 150%;
+  cursor: pointer;
 }
 #copyrights{
   width: 40%;
