@@ -410,7 +410,7 @@ top nav
   height: 50%;
   width: 100%;
   cursor: pointer;
-  background:#0ff;
+  background:transparent;
 
 }
 #explore-ico{
@@ -421,7 +421,7 @@ top nav
   height: 100%;
   width: 400px;
   cursor: pointer;
-  background:#fff;
+  background:transparent;
 
 }
 #bottomnav{
@@ -504,12 +504,6 @@ top nav
   transition: .5s;
 }
 
-/*@media screen and (max-height: 1000px) {
-  #name-svg{
-  height: 250%;
-  width: 250%;
-}
-}*/
 
 
 @media screen and (max-width: 750px) {
@@ -600,6 +594,7 @@ top nav
 } 
 }
 
+
 @media screen and (max-height: 600px) {
 
   #navleft{
@@ -629,7 +624,15 @@ top nav
   top: 50%;
   left: 50px;
   transform: translate(-50%,-50%);
-
+}
+  #middlebar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 170px;
+  width: 60%;
+  display: none;
 }
 }
 @media screen and (max-height: 350px) {
@@ -643,7 +646,15 @@ top nav
 
 }
 
-
+ #middlebar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 140px;
+  width: 60%;
+  display: none;
+}
 }
 
 
