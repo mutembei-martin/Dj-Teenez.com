@@ -1,12 +1,10 @@
 
 
 body {
-  position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     background: #000;
-    overflow:hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -495,6 +493,8 @@ top nav
   top: 30%;
   left: 50px;
   transform: translate(-50%,-50%);
+  display: none;
+
 
 }
 #navright{
@@ -502,7 +502,9 @@ top nav
   top: 30%;
   left:74%;
   transform: translate(-50%,-50%);
-  display: block;
+  /*display: block;*/
+  display: none;
+  
 
 
 }
