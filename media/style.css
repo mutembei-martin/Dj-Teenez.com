@@ -255,6 +255,7 @@ top nav
   width:60px;
   background:transparent;
   z-index: 2;
+  display: none;
 
 }
 #hidhome{
@@ -379,7 +380,7 @@ top nav
   height: 200px;
   width: 60%;
   background: #fff;
-  /*display: none;*/
+  display: none;
 }
 
 #bottomnav{
@@ -389,6 +390,7 @@ top nav
   height: 40px;
   width:100%;
   background:transparent;
+  display: none;
 }
 #copyrights{
   position: relative;
@@ -516,7 +518,6 @@ top nav
   top: 30%;
   left:74%;
   transform: translate(-50%,-50%);
-  display: block;
 
 
 }
