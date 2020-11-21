@@ -179,7 +179,7 @@ top nav
   transform: translate(-50%,-50%);
   cursor: pointer;
   float: left;
-  font-size: 20px;
+  font-size: 25px;
   background: transparent;
   z-index: 1;
 
@@ -253,7 +253,7 @@ top nav
   transform: translate(-50%,-50%);
   height: 240px;
   width:60px;
-  background:transparent;
+  background:#999;
   z-index: 2;
 
 }
@@ -306,7 +306,7 @@ top nav
   width: 50px;
   text-align: center;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
   cursor: pointer;
   background:transparent;
@@ -321,7 +321,7 @@ top nav
   width: 50px;
   text-align: center;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
   cursor: pointer;
   background:transparent;
@@ -373,11 +373,13 @@ top nav
 }
 #middlebar{
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   height: 200px;
   width: 60%;
   background: #fff;
+  /*display: none;*/
 }
 
 #bottomnav{
@@ -406,7 +408,7 @@ top nav
   height: 100%;
   width: 50%;
   float:right;
-  color: #e6e600;
+  color: #0099ff;
   background: transparent;
 }
 
@@ -431,7 +433,7 @@ top nav
   left: 100%;
   height: 1px;
   width: 80%;
-  background: #e6e600;
+  background: #0099ff;
   transition: .5s;
 }
 
@@ -455,7 +457,7 @@ top nav
   left: 100%;
   height: 1px;
   width: 80%;
-  background: #e6e600;
+  background: #0099ff;
   transition: .5s;
 }
 
@@ -463,6 +465,16 @@ top nav
 
 
 @media screen and (max-width: 750px) {
+
+
+#pre-loader{
+  position: absolute;
+    height: 130px;
+    width: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 #menu{
   left: 5px;
@@ -509,9 +521,6 @@ top nav
 
 }
 #middlebar{
-  position: absolute;
-  top: 50%;
-  left: 0%;
   width: 100%;
 }
 #copyrights{
