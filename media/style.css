@@ -1,14 +1,16 @@
 
-
+html{
+    overflow: hidden;
+}
 body {
     height: 100%;
     width: 100%;
     margin: 0;
     background: #000;
-  background-attachment: fixed;
-  background-position: center;
+    overflow: hidden;
+  background-position:min-height: ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 
   }
 
@@ -373,6 +375,7 @@ top nav
   left: 20%;
   height: 200px;
   width: 60%;
+  overflow: hidden;
   background: transparent;
 }
 
@@ -382,6 +385,7 @@ top nav
   left: 0;
   height: 40px;
   width:100%;
+  overflow: hidden;
   background:transparent;
 }
 #copyrights{
@@ -404,6 +408,8 @@ top nav
   float:right;
   color: #e6e600;
   background: transparent;
+  overflow: hidden;
+
 }
 
 #developer{
@@ -504,7 +510,7 @@ top nav
   transform: translate(-50%,-50%);
   /*display: block;*/
   display: none;
-  
+
 
 
 }
