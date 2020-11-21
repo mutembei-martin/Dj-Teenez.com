@@ -1,9 +1,9 @@
-
 html{
     overflow: hidden;
 }
+
 body {
-    position: relative;
+  position: relative;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -13,7 +13,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 
   }
 
@@ -368,9 +367,9 @@ top nav
   transform: translate(-50%,-50%);
   height: 240px;
   width:50%;
-  background:#fff;
+  background:#0ff;
   display: none;
-  /*z-index: 2;*/
+  z-index: 2;
 }
 #middlebar{
   position: absolute;
@@ -378,8 +377,7 @@ top nav
   left: 20%;
   height: 200px;
   width: 60%;
-  overflow: hidden;
-  background: transparent;
+  background: #fff;
 }
 
 #bottomnav{
@@ -388,7 +386,6 @@ top nav
   left: 0;
   height: 40px;
   width:100%;
-  overflow: hidden;
   background:transparent;
 }
 #copyrights{
@@ -411,8 +408,6 @@ top nav
   float:right;
   color: #e6e600;
   background: transparent;
-  overflow: hidden;
-
 }
 
 #developer{
@@ -500,10 +495,8 @@ top nav
 #navleft{
   position: absolute;
   top: 30%;
-  left: 50px;
+  left: 30px;
   transform: translate(-50%,-50%);
-  display: none;
-
 
 }
 #navright{
@@ -511,9 +504,7 @@ top nav
   top: 30%;
   left:74%;
   transform: translate(-50%,-50%);
-  /*display: block;*/
-  display: none;
-
+  display: block;
 
 
 }
@@ -597,7 +588,6 @@ top nav
   top: 37%;
   left:74%;
   transform: translate(-50%,-50%);
-  display: block;
 
 }
 
