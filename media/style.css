@@ -410,10 +410,10 @@ top nav
   height: 50%;
   width: 100%;
   cursor: pointer;
-  background:transparent;
+  background:#fff;
 
 }
-#explore-ico{
+#music-ico{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -421,9 +421,142 @@ top nav
   height: 100%;
   width: 400px;
   cursor: pointer;
-  background:transparent;
+  background:#0ff;
+  display: none;
 
 }
+
+#music{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#ff0;
+
+}
+
+
+#music-sounds{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#000;
+
+}
+
+#music-experiences{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#ff0000;
+
+}
+
+#travel-ico{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 400px;
+  cursor: pointer;
+  background:#000;
+  display: none;
+
+
+}
+
+#travel{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#ff0;
+
+}
+
+
+#travel-tours{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#000;
+
+}
+
+#travel-sights{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#ff0000;
+
+}
+
+
+
+#Photography-ico{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 400px;
+  cursor: pointer;
+  background:#ff0;
+
+}
+
+#Photography{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#ff0;
+
+}
+
+
+#Photography-nature{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#000;
+
+}
+
+#Photography-clarity{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  background:#00ff00;
+
+}
+
+
 #bottomnav{
   position: absolute;
   bottom: 0;
