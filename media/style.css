@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Cutive Mono';
+    src: url('CutiveMono-Regular.eot');
+    src: url('CutiveMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CutiveMono-Regular.woff2') format('woff2'),
+        url('CutiveMono-Regular.woff') format('woff'),
+        url('CutiveMono-Regular.ttf') format('truetype'),
+        url('CutiveMono-Regular.svg#CutiveMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 html{
     overflow: hidden;
 }
@@ -408,9 +423,30 @@ top nav
   left: 0%;
   height: 50%;
   width: 100%;
+  color: #000;
   background:transparent;
 
 }
+
+#defs-ico{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background:transparent;
+
+
+}
+
+#defs{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Cutive Mono';
+}
+
 #music-ico{
   position: absolute;
   top: 50%;
@@ -419,7 +455,7 @@ top nav
   height: 100%;
   width: 400px;
   background:transparent;
-
+  display: none;
 
 }
 
@@ -431,8 +467,7 @@ top nav
   width: 200px;
   background:transparent;
   border-right: 2px solid #fff;
-
-
+  display: none;
 }
 
 #musicc{
@@ -441,6 +476,7 @@ top nav
   line-height: 100px;
   font-size: 25px;
   font-weight: bold;
+  display: none;
 }
 
 #music-sounds{
@@ -450,7 +486,7 @@ top nav
   height: 100%;
   width: 200px;
   background:transparent;
-
+  display: none;
 }
 
 #sounds{
