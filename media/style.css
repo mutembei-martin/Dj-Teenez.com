@@ -81,9 +81,9 @@ top nav
 
 #menu span{position:relative;display:block;height:1px;background:#fff;float:right;}
 
-#menu span:nth-child(1){margin-top:4px;width:80%;}
-#menu span:nth-child(2){margin-top:4px;width:60%}
-#menu span:nth-child(3){margin-top:4px;width:42%;}
+#menu span:nth-child(1){margin-top:5px;width:80%;}
+#menu span:nth-child(2){margin-top:5px;width:60%}
+#menu span:nth-child(3){margin-top:5px;width:42%;}
 
 
 #rightop{
@@ -390,7 +390,7 @@ top nav
 }
 #middlebar{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 200px;
@@ -404,6 +404,8 @@ top nav
   left: 0%;
   height: 50%;
   width: 100%;
+    background:transparent;
+  overflow: hidden;
   /*border-bottom: 2px solid #fff;*/
 
 
@@ -411,8 +413,8 @@ top nav
 
 #name-svg{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 200%;
+  left: 45%;
   transform: translate(-50%,-50%);
   height: 300%;
   width: 300%;
@@ -424,13 +426,14 @@ top nav
   height: 50%;
   width: 100%;
   color: #000;
+  overflow: hidden;
   background:transparent;
 
 }
 
 #defs-ico{
   position: absolute;
-  top: 0%;
+  top: -100%;
   left: 0%;
   height: 100%;
   width: 100%;
@@ -769,6 +772,12 @@ top nav
     transform: translate(-50%,-50%);
 }
 
+
+#topnav{
+  top: 15px;
+}
+
+
 #menu{
   left: 5px;
 }
@@ -819,12 +828,18 @@ top nav
 
 #name-svg{
   position: absolute;
-  top: 50%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height: 150%;
-  width: 150%;
+  height: 200%;
+  width: 200%;
   cursor: pointer;
+}
+
+#defs{
+  font-size: 21px;
+ /* line-height: 40px;
+  margin-top: 20px;*/
 }
 #copyrights{
   width: 40%;
