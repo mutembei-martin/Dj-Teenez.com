@@ -801,6 +801,7 @@ top nav
   position: absolute;
   top: 30%;
   left: 30px;
+  display: none;
   transform: translate(-50%,-50%);
 
 }
