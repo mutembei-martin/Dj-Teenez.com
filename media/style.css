@@ -389,8 +389,8 @@ top nav
   left: 0%;
   height: 50%;
   width: 100%;
-  cursor: pointer;
-  background:transparent;
+  /*border-bottom: 2px solid #fff;*/
+
 
 }
 
@@ -401,7 +401,6 @@ top nav
   transform: translate(-50%,-50%);
   height: 300%;
   width: 300%;
-  cursor: pointer;
 }
 #explore{
   position: relative;
@@ -409,8 +408,7 @@ top nav
   left: 0%;
   height: 50%;
   width: 100%;
-  cursor: pointer;
-  background:#fff;
+  background:transparent;
 
 }
 #music-ico{
@@ -420,9 +418,8 @@ top nav
   transform: translate(-50%,-50%);
   height: 100%;
   width: 400px;
-  cursor: pointer;
-  background:#0ff;
-  display: none;
+  background:transparent;
+
 
 }
 
@@ -432,11 +429,19 @@ top nav
   left: 0%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
-  background:#ff0;
+  background:transparent;
+  border-right: 2px solid #fff;
+
 
 }
 
+#musicc{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 #music-sounds{
   position: absolute;
@@ -444,9 +449,15 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
-  background:#000;
+  background:transparent;
 
+}
+
+#sounds{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
 }
 
 #music-experiences{
@@ -455,9 +466,17 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
-  background:#ff0000;
+  background:transparent;
+  display: none;
 
+}
+
+
+#experiences{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
 }
 
 #travel-ico{
@@ -467,9 +486,9 @@ top nav
   transform: translate(-50%,-50%);
   height: 100%;
   width: 400px;
-  cursor: pointer;
   background:#000;
   display: none;
+
 
 
 }
@@ -480,11 +499,21 @@ top nav
   left: 0%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
   background:#ff0;
+
+  display: none;
 
 }
 
+#travell{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  display: none;
+
+}
 
 #travel-tours{
   position: absolute;
@@ -492,10 +521,21 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
   background:#000;
+  display: none;
 
 }
+
+#tours{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  display: none;
+
+}
+
+
 
 #travel-sights{
   position: absolute;
@@ -503,12 +543,20 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
   background:#ff0000;
+  display: none;
+
 
 }
 
+#sights{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  display: none;
 
+}
 
 #Photography-ico{
   position: absolute;
@@ -517,8 +565,10 @@ top nav
   transform: translate(-50%,-50%);
   height: 100%;
   width: 400px;
-  cursor: pointer;
   background:#ff0;
+  display: none;
+
+
 
 }
 
@@ -528,11 +578,20 @@ top nav
   left: 0%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
-  background:#ff0;
+  background:#000;
+  display: none;
+
 
 }
+#Photographyy{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  display: none;
 
+}
 
 #Photography-nature{
   position: absolute;
@@ -540,8 +599,19 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
   background:#000;
+  display: none;
+
+
+}
+
+
+#nature{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  display: none;
 
 }
 
@@ -551,8 +621,19 @@ top nav
   left: 50%;
   height: 100%;
   width: 200px;
-  cursor: pointer;
   background:#00ff00;
+  display: none;
+
+
+}
+
+
+#clarity{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  display: none;
 
 }
 
@@ -564,7 +645,7 @@ top nav
   height: 40px;
   width:100%;
   background:transparent;
-  display: none;
+
 }
 #copyrights{
   position: relative;
