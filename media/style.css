@@ -440,10 +440,11 @@ top nav
 }
 
 #defs{
-  color: #fff;
+  color: #ffff00;
   font-size: 25px;
   text-align: center;
-  line-height: 100px;
+  line-height: 40px;
+  margin-top: 20px;
   font-family: 'Cutive Mono';
 }
 
@@ -701,7 +702,7 @@ top nav
   height: 100%;
   width: 50%;
   float:right;
-  color: #0099ff;
+  color: #ffff00;
   background: transparent;
 }
 
