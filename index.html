@@ -32,6 +32,55 @@
 			<span></span>
 	</div>
 
+	<div id ="menu1">
+		<svg id="menusvg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.65 29.76">
+			<defs>
+				<style>
+					.cls-1q{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
+					  .cls-1q{stroke-dasharray: 500; stroke-dashoffset:0; animation:menuclosed 4s linear forwards;animation-iteration-count: 1;}
+					.cls-1qq{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
+					  .cls-1qq{stroke-dasharray: 500; stroke-dashoffset:-500; animation:menuclose 3s linear forwards;animation-delay:1s;animation-iteration-count: 1;}
+
+					  	 @-webkit-keyframes menuclose{
+									    0%{
+									        stroke-dashoffset:-500;
+									        
+									    }
+									    50%{
+									        stroke-dashoffset:-500;
+									        
+									    }
+									    100%{
+									        stroke-dashoffset:0;
+									        
+									    }
+									    }
+
+
+						@-webkit-keyframes menuclosed{
+									    0%{
+									        stroke-dashoffset:0;
+									        
+									    }
+									    50%{
+									        stroke-dashoffset:-500;
+									        
+									    }
+									    100%{
+									        stroke-dashoffset:0;
+									        
+									    }
+									    }
+
+
+
+				</style>
+			</defs>
+			<line class="cls-1q" x1="0.32" y1="29.38" x2="34.32" y2="0.38"/>
+			<line class="cls-1qq" x1="0.32" y1="0.38" x2="34.32" y2="29.38"/>
+		</svg>
+	</div>
+
 	<div id ="rightop">
 			<div id ="search-ico">
 				<object id="searching">
@@ -285,7 +334,7 @@
 	$(document).ready(function(){
 			$("#pre-loader").fadeOut();
 			$("#topnav").fadeIn();
-			if (innerWidth > 750){$("#navleft").fadeIn();}
+			$("#navleft").fadeIn();
 
 		// if (innerWidth < 750) {$("#navright").fadeIn();}	
 			
@@ -297,6 +346,48 @@
 			$("#name-svg").delay(2000).animate({top:"50%"});
 
 			$("#defs-ico").delay(2000).animate({top:"0%"});
+
+
+
+
+
+				$("#menu").click(function(e){
+					e.preventDefault(); 
+						$("#menu").fadeOut();
+						$("#menu1").fadeIn();
+						$("#hidhome").fadeIn().delay(200).animate({opacity:"1",marginLeft:"0%"});
+						$("#hidmix").delay(300).fadeIn().delay(300).animate({opacity:"1",marginLeft:"0%"});						
+						$("#hidwork").delay(400).fadeIn().delay(400).animate({opacity:"1",marginLeft:"0%"});						
+						$("#hidctct").delay(500).fadeIn().delay(500).animate({opacity:"1",marginLeft:"0%"});						
+
+
+				});
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $("#developer").mouseover(function(){
@@ -354,7 +445,7 @@ $("#on").click(function(){
 });
 
 
-
+if (innerWidth>750) {
 $("#search-ico").click(function(e){
 	e.preventDefault(); 
 		$("#volume").delay(500).fadeOut("slow");
@@ -367,6 +458,7 @@ $("#search-ico").click(function(e){
 
 
 });
+}
 
 $("#toggle").click(function(e){
 	e.preventDefault(); 

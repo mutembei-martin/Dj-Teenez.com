@@ -70,21 +70,117 @@ top nav
   position: relative;
   top: 20px;
   left: 20px;
-  height: 30px;
+  height: 20px;
   width: 40px;
   background: transparent;
+  overflow: hidden;
   float: left;
   cursor: pointer;
+  transform: rotate(180deg);
+
 
 }
 
 
-#menu span{position:relative;display:block;height:1px;background:#fff;float:right;}
 
-#menu span:nth-child(1){margin-top:4px;width:80%;}
-#menu span:nth-child(2){margin-top:4px;width:60%}
-#menu span:nth-child(3){margin-top:4px;width:42%;}
+#menu span{position:relative;display:block;height:1px;background:#fff;}
 
+#menu span:nth-child(1){margin-top:4px;width:42%; animation:menuflexc 1.5s linear forwards;animation-iteration-count: 1;}
+#menu span:nth-child(2){margin-top:4px;width:60%; animation:menuflexb 1s linear forwards;animation-delay:.5s;animation-iteration-count: 1;}
+#menu span:nth-child(3){margin-top:4px;width:80%; animation:menuflexa .5s linear forwards;animation-delay:1s;animation-iteration-count:1;}
+
+
+
+  @-webkit-keyframes menuflexa{
+              0%{
+                  width:80%;
+                  
+              }
+              25%{
+                  width:40%;
+                  
+              }
+              50%{
+                  width:0%;
+                  
+              }75%{
+                  width:40%;
+                  
+              }
+              100%{
+                  width:80%;
+                  
+              }
+              }
+
+
+@-webkit-keyframes menuflexb{
+              0%{
+                  width:60%;
+                  
+              }
+              25%{
+                  width:30%;
+                  
+              }
+              50%{
+                  width:0%;
+                  
+              }75%{
+                  width:30%;
+                  
+              }
+              100%{
+                  width:60%;
+                  
+              }
+              }
+
+              @-webkit-keyframes menuflexc{
+              0%{
+                  width:42%;
+                  
+              }
+              25%{
+                  width:21%;
+                  
+              }
+              50%{
+                  width:0%;
+                  
+              }75%{
+                  width:21%;
+                  
+              }
+              100%{
+                  width:42%;
+                  
+              }
+              }
+
+#menu1{
+  position: relative;
+  top: 18px;
+  left: 20px;
+  height: 25px;
+  width: 35px;
+  background: transparent;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+  display: none;
+
+}
+
+#menusvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 80%;
+  width: 90%;
+
+  }
 
 #rightop{
   position: relative;
@@ -270,6 +366,7 @@ top nav
   height: 240px;
   width:60px;
   background:transparent;
+  overflow: hidden;
   z-index: 2;
   display: none;
 
@@ -278,9 +375,13 @@ top nav
   position: relative;
   width: 100%;
   height: 20%;
- margin-top: 10%;
+  margin-top: 10%;
+  margin-left: -100%;
   float: left;
   background:transparent;
+  display: none;
+  opacity: 0;
+
 
 }
 #home-ico{
@@ -309,9 +410,14 @@ top nav
   position: relative;
   width: 100%;
   height: 20%;
- margin-top: 20%;
+  margin-top: 20%;
+  margin-left: -100%;
   float: left;
   background:transparent;
+  display: none;
+  opacity: 0;
+
+
 
 }
 #mix-ico{
@@ -329,6 +435,22 @@ top nav
   background:transparent;
 
 }
+
+#hidwork{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  margin-top: 20%;
+   margin-left: -100%;
+  float: left;
+  background:transparent;
+  display: none;
+  opacity: 0;
+
+
+
+}
+
 #work-ico{
   position: absolute;
   top: 50%;
@@ -344,6 +466,20 @@ top nav
   background:transparent;
 
 }
+
+#hidctct{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  float: left;
+  margin-top: 20%;
+   margin-left: -100%;
+  background:transparent;
+  display: none;
+  opacity: 0;
+
+}
+
 #ctct-ico{
   position: absolute;
   top: 50%;
@@ -356,24 +492,6 @@ top nav
   font-size: 35px;
   color: #fff;
   cursor: pointer;
-  background:transparent;
-
-}
-#hidwork{
-  position: relative;
-  width: 100%;
-  height: 20%;
- margin-top: 20%;
-  float: left;
-  background:transparent;
-
-}
-#hidctct{
-  position: relative;
-  width: 100%;
-  height: 20%;
-  float: left;
- margin-top: 20%;
   background:transparent;
 
 }
@@ -811,7 +929,6 @@ top nav
   position: absolute;
   top: 30%;
   left: 30px;
-  display: none;
   transform: translate(-50%,-50%);
 
 }
@@ -872,6 +989,13 @@ top nav
   transform: translate(-50%,-50%);
 
 }
+#navright{
+  position: absolute;
+  top: 37%;
+  left:74%;
+  transform: translate(-50%,-50%);
+
+}
 
 }
 @media screen and (max-height: 500px) {
@@ -884,6 +1008,14 @@ top nav
 
 }
 
+  #navright{
+  position: absolute;
+  top: 42%;
+  left:74%;
+  transform: translate(-50%,-50%);
+
+}
+
 }
 @media screen and (max-height: 450px) {
 
@@ -893,6 +1025,14 @@ top nav
   left: 50px;
   transform: translate(-50%,-50%);
 }
+
+  #navright{
+  position: absolute;
+  top: 52%;
+  left:74%;
+  transform: translate(-50%,-50%);
+
+}
   #middlebar{
   position: absolute;
   top: 50%;
@@ -900,8 +1040,14 @@ top nav
   transform: translate(-50%,-50%);
   height: 170px;
   width: 60%;
-  display: none;
 }
+#defs{
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
 }
 @media screen and (max-height: 350px) {
 
@@ -914,52 +1060,6 @@ top nav
 
 }
 
- #middlebar{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 140px;
-  width: 60%;
-  display: none;
-}
-}
-
-
-@media screen and (max-height: 600px) {
-
-  #navright{
-  position: absolute;
-  top: 37%;
-  left:74%;
-  transform: translate(-50%,-50%);
-
-}
-
-}
-@media screen and (max-height: 500px) {
-
-  #navright{
-  position: absolute;
-  top: 42%;
-  left:74%;
-  transform: translate(-50%,-50%);
-
-}
-
-}
-@media screen and (max-height: 450px) {
-
-  #navright{
-  position: absolute;
-  top: 52%;
-  left:74%;
-  transform: translate(-50%,-50%);
-
-}
-}
-@media screen and (max-height: 350px) {
-
   #navright{
   position: absolute;
   top: 52%;
@@ -969,8 +1069,22 @@ top nav
 
 }
 
-
+ #middlebar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 140px;
+  width: 60%;
 }
+#defs{
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 5px;
+}
+}
+
 
 
 
