@@ -37,9 +37,9 @@
 			<defs>
 				<style>
 					.cls-1q{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
-					  .cls-1q{stroke-dasharray: 500; stroke-dashoffset:0; animation:menuclosed 4s linear forwards;animation-iteration-count: 1;}
+					  .cls-1q{stroke-dasharray: 500; stroke-dashoffset:0; animation:menuclosed 3s linear forwards;animation-iteration-count: 1;}
 					.cls-1qq{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
-					  .cls-1qq{stroke-dasharray: 500; stroke-dashoffset:-500; animation:menuclose 3s linear forwards;animation-delay:1s;animation-iteration-count: 1;}
+					  .cls-1qq{stroke-dasharray: 500; stroke-dashoffset:-500; animation:menuclose 2s linear forwards;animation-delay:1s;animation-iteration-count: 1;}
 
 					  	 @-webkit-keyframes menuclose{
 									    0%{
@@ -414,6 +414,16 @@
 </div>
 
 
+
+
+<section id ="home"></section>
+<section></section>
+<section></section>
+<section></section>
+
+
+
+
 <script src="media/jquery.js"></script>
 <script src="media/bootstrap.min.js"></script>
 <script src="media/jquery.backstretch.min.js"></script>
@@ -422,6 +432,14 @@
 <script type="text/javascript">
 	window.onload = function(){
 	$(document).ready(function(){
+
+	var hidhomecounter = 0;	
+	var hidmixcounter = 0;
+	var hidworkcounter = 0;
+	var hidctctcounter = 0;
+
+
+
 			$("#pre-loader").fadeOut();
 			$("#topnav").fadeIn();
 			$("#navleft").fadeIn();
@@ -444,12 +462,25 @@
 				$("#menu").click(function(e){
 					e.preventDefault(); 
 
-						$("#menu").delay(2000).fadeOut();
+						$("#menu").delay(1000).fadeOut();
 						$("#menu1").fadeIn();
 						$("#hidhome").fadeIn().delay(200).animate({opacity:"1",marginLeft:"0%"});
 						$("#hidmix").delay(300).fadeIn().delay(300).animate({opacity:"1",marginLeft:"0%"});						
 						$("#hidwork").delay(400).fadeIn().delay(400).animate({opacity:"1",marginLeft:"0%"});						
-						$("#hidctct").delay(500).fadeIn().delay(500).animate({opacity:"1",marginLeft:"0%"});						
+						$("#hidctct").delay(500).fadeIn().delay(500).animate({opacity:"1",marginLeft:"0%"});
+
+						if (hidhomecounter==1) {
+
+							hidhomecounter=0;
+							$("#home").delay(500).animate({height:"1%"},{duration:1000});
+
+							$("#home").delay(500).animate({width:"0%"},{duration:1000}).fadeOut();	
+
+										$("#name-svg").delay(2000).animate({top:"50%"});
+
+										$("#defs-ico").delay(2000).animate({top:"0%"});	
+				
+						}						
 
 
 				});
@@ -471,6 +502,48 @@
 				});
 			
 
+
+				$("#hidhome").click(function(e){
+					e.preventDefault(); 
+
+
+					hidhomecounter++;
+
+					if (hidhomecounter==1) {
+
+						$("#menu1").fadeOut();
+						$("#menu").delay(2200).fadeIn();
+						$("#hidhome").delay(1900).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeOut();
+						$("#hidmix").delay(1600).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
+						$("#hidwork").delay(1300).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
+						$("#hidctct").delay(1000).animate({marginLeft:"-100%",opacity:"0"}).fadeIn();	
+
+						$("#name-svg").delay(3000).animate({top:"200%"});
+
+						$("#defs-ico").delay(3000).animate({top:"-100%"});	
+
+							if (innerWidth>750) {
+						$("#home").delay(4000).fadeIn().animate({width:"80%"},{duration:1000});		
+				
+						}else{
+							$("#home").delay(4000).fadeIn().animate({width:"100%"},{duration:1000});
+						}
+
+						if (innerHeight>500) {
+						$("#home").delay(500).animate({height:"75%"},{duration:1000});
+						}else if(innerHeight>400){
+
+						$("#home").delay(500).animate({height:"70%"},{duration:1000});
+
+						}else{
+						$("#home").delay(500).animate({height:"60%"},{duration:1000});
+
+						}
+
+						}
+
+					console.log(hidhomecounter);
+				});
 
 
 

@@ -879,6 +879,20 @@ top nav
 
 
 
+#home{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 1%;
+  width: 0%;
+  background: transparent;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+/*  display: none;*/
+}
+
+
 @media screen and (max-width: 750px) {
 
 
