@@ -443,7 +443,8 @@
 
 				$("#menu").click(function(e){
 					e.preventDefault(); 
-						$("#menu").fadeOut();
+
+						$("#menu").delay(2000).fadeOut();
 						$("#menu1").fadeIn();
 						$("#hidhome").fadeIn().delay(200).animate({opacity:"1",marginLeft:"0%"});
 						$("#hidmix").delay(300).fadeIn().delay(300).animate({opacity:"1",marginLeft:"0%"});						
@@ -454,6 +455,21 @@
 				});
 			
 
+
+
+				$("#menu1").click(function(e){
+					e.preventDefault(); 
+
+						$("#menu1").fadeOut();
+						$("#menu").delay(2200).fadeIn();
+						$("#hidhome").delay(1900).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeOut();
+						$("#hidmix").delay(1600).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
+						$("#hidwork").delay(1300).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
+						$("#hidctct").delay(1000).animate({marginLeft:"-100%",opacity:"0"}).fadeIn();						
+
+
+				});
+			
 
 
 
