@@ -161,7 +161,7 @@ top nav
 #menu1{
   position: relative;
   top: 18px;
-  left: 20px;
+  left: 30px;
   height: 25px;
   width: 35px;
   background: transparent;
@@ -900,6 +900,12 @@ top nav
 #menu{
   left: 5px;
 }
+
+#menu1{
+  left: 10px;
+}
+
+
 
 #search-ico{
   opacity: 0;
