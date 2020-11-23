@@ -285,7 +285,7 @@
 	$(document).ready(function(){
 			$("#pre-loader").fadeOut();
 			$("#topnav").fadeIn();
-			$("#navleft").fadeIn();
+			if (innerWidth > 750){$("#navleft").fadeIn();}
 
 		// if (innerWidth < 750) {$("#navright").fadeIn();}	
 			

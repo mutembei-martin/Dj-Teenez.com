@@ -15,7 +15,7 @@
        "media/1.jpg",
         "media/7.jpg",
         "media/6.jpg"
-        ],  {duration: 10000, fade: 2000});
+        ],  {duration: 15000, fade: 2000});
 
 
     });
