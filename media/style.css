@@ -57,7 +57,7 @@ top nav
 
 #topnav{
   position: absolute;
-  top: 10px;
+  top: -70px;
   left: 0;
   height: 50px;
   width: 100%;
@@ -498,13 +498,196 @@ top nav
 #navright{
   position: absolute;
   top: 30%;
-  left:74%;
-  transform: translate(-50%,-50%);
-  height: 240px;
+  left:100%;
+  transform: translateY(-50%);
+  height: 0px;
   width:50%;
-  background:#0ff;
+  background:#000;
+  opacity: .8;
+  overflow: hidden;
   display: none;
   z-index: 2;
+}
+
+#navright-close{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  margin-top:0;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  overflow: hidden;
+
+  /*display: none;*/
+  /*opacity: 0;*/
+}
+
+#close{
+  position: relative;
+  top: 0;
+  left: 88%;
+  height: 35px;
+  width: 45px;
+  background: transparent;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+  display: none;
+}
+
+#closesvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50%;
+  width: 60%;
+}
+
+#hidsearch{
+  position: relative;
+  width: 100%;
+  height: 22%;
+  margin-top:0%;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  overflow: hidden;
+
+  /*display: none;*/
+  /*opacity: 0;*/
+}
+
+#hidsearch-ico{
+
+  position: relative;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background: transparent;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+  display: none;
+
+}
+
+#hidsearchit{
+  position: relative;
+  top: 100%;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  background: transparent;
+  overflow: hidden;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#w3-input{display:block;border:none;border-bottom:1px solid #fff;color:#fff;width:100%;height: 100%;background:transparent;font-size: 16px;}
+#w3-input:focus{
+  border:none;
+  border-bottom:1px solid #0099ff;
+  background:transparent;
+}
+#w3-input::placeholder{
+  color: #0099ff;
+}
+
+#hidlogo{
+  position: relative;
+  width: 100%;
+  height: 22%;
+  margin-top:3%;
+  overflow: hidden;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  /*display: none;*/
+  /*opacity: 0;*/
+}
+
+#hidlogo-ico{
+  position: relative;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background:transparent;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+}
+#hidlogo-content{
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  font-size: 16px;
+  color: #0099ff;
+  line-height: 55px;
+  text-align: left;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  /*display: none;*/
+
+}
+
+
+#hidplay{
+  position: relative;
+  width: 100%;
+  height: 22%;
+  margin-top:3%;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  overflow: hidden;
+
+  /*display: none;*/
+  /*opacity: 0;*/
+}
+#hidplay-ico{
+   position: relative;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background:transparent;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;  
+}
+
+#playitt{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 60%;
+    width: 60%;
+  cursor: pointer;
+}
+#hidplay-content{
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  font-size: 16px;
+  color: #0099ff;
+  line-height: 55px;
+  text-align: left;
+  /*margin-left: -100%;*/
+  float: left;
+  background:transparent;
+  /*display: none;*/
 }
 #middlebar{
   position: absolute;
@@ -798,12 +981,12 @@ top nav
 
 #bottomnav{
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 0;
   height: 40px;
   width:100%;
   background:transparent;
-    display: none;
+  display: none;
 
 }
 #copyrights{
@@ -824,7 +1007,7 @@ top nav
   height: 100%;
   width: 50%;
   float:right;
-  color: #ffff00;
+  color: #999900;
   background: transparent;
 }
 
@@ -849,7 +1032,7 @@ top nav
   left: 100%;
   height: 1px;
   width: 80%;
-  background: #0099ff;
+  background: #e6e600;
   transition: .5s;
 }
 
@@ -886,10 +1069,12 @@ top nav
   transform: translate(-50%,-50%);
   height: 1%;
   width: 0%;
-  background: transparent;
+  background: #000;
+  opacity: .9;
   border-bottom: 1px solid #FFF;
   border-top: 1px solid #FFF;
 /*  display: none;*/
+
 }
 
 
@@ -907,7 +1092,7 @@ top nav
 
 
 #topnav{
-  top: 15px;
+  top: -70px;
 }
 
 
@@ -991,12 +1176,41 @@ top nav
   font-size: 12px;
 
 }
+#developer{
+  text-align: left;
+}
+#developer::after{
+  left: 0%;
+  width: 0%;
+}
 #developer p{
   padding-right: 0;
 }
 #terms p{
   padding-right: 0;
 } 
+}
+
+
+@media screen and (max-width: 600px) {
+#navright{
+  width: 70%;
+
+}
+
+#close{
+  left: 75%;
+}
+}
+
+@media screen and (max-width: 400px) {
+    #navright{
+  width: 80%;
+
+}
+#close{
+  left: 67%;
+}
 }
 
 
@@ -1069,6 +1283,16 @@ top nav
 }
 
 }
+
+@media screen and (max-height: 400px) {
+
+  #navleft{
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%,-50%);
+}
+}
 @media screen and (max-height: 350px) {
 
   #navleft{
@@ -1084,9 +1308,13 @@ top nav
   position: absolute;
   top: 52%;
   left:74%;
-  height: 180px;
+  height: 0px;
   transform: translate(-50%,-50%);
 
+}
+
+#hidlogo-content{
+  line-height: 40px;
 }
 
  #middlebar{
