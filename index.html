@@ -482,7 +482,7 @@
 		</div>
 	</div>
 	<div id ="explore">
-		<div id ="defs-ico"><p id ="defs">From Kenyan Streets To The International Stage.</p></div>
+		<div id ="defs-ico"><p id ="defs">From Kenyan Streets To The </br> International Stage.</p></div>
 		<div id ="music-ico">
 			<div id ="music"><p id ="musicc">Music</p></div>			
 			<div id ="music-sounds"><p id ="sounds">Sounds</p></div>
@@ -545,6 +545,7 @@
 
 
 
+
 			$("#pre-loader").delay(2000).fadeOut();
 		if (innerWidth < 750) {	
 
@@ -567,11 +568,81 @@
 			$("#middlebar").delay(2000).fadeIn();
 			$("#bottomnav").delay(2400).fadeIn().animate({bottom:"0"});
 
+			$("#explore").delay(3500).animate({height:"50%"});
+
+			// $("#defs-ico").delay(3700).animate({opacity:"1"});
+
 
 
 			$("#name-svg").delay(4000).animate({top:"50%"});
 
-			$("#defs-ico").delay(4000).animate({top:"0%"});
+			// $("#defs-ico").delay(200).animate({top:"0%"});
+
+
+			$("#music").delay(4500).animate({height:"100%"});
+
+
+
+			$("#musicc").delay(5600).animate({left:"0%"});
+			$("#sounds").delay(6000).animate({left:"0%"});
+
+
+			$("#sounds").delay(11000).animate({left:"-100%"});		
+
+			$("#music-experiences").delay(11100).fadeIn();
+			$("#experiences").delay(18000).animate({left:"0%"});	
+
+
+
+			$("#experiences").delay(15000).animate({left:"-100%"});	
+			$("#musicc").delay(28000).animate({left:"100%"});
+			$("#music").delay(30000).animate({height:"0%"}).fadeOut();
+
+			$("#travel").delay(36000).fadeIn().animate({height:"100%"});	
+
+			$("#travell").delay(37000).animate({left:"0%"});
+
+			$("#travel-tours").delay(38000).fadeIn();
+			$("#tours").delay(38100).animate({left:"0%"});
+
+			$("#tours").delay(13000).animate({left:"-100%"});
+
+			$("#travel-sights").delay(50000).fadeIn();
+			$("#sights").fadeIn().delay(52000).animate({left:"0%"});
+
+
+			$("#sights").delay(14000).animate({left:"-100%"});
+			$("#travell").delay(30000).animate({left:"100%"});
+
+
+			$("#travel").delay(32000).animate({height:"0%"}).fadeOut();
+
+
+
+			$("#Photography").delay(70000).fadeIn().animate({height:"100%"});	
+
+			$("#Photographyy").delay(71000).animate({left:"0%"});
+
+			$("#Photography-nature").delay(70000).fadeIn();
+			$("#nature").delay(72000).animate({left:"0"});
+
+			$("#nature").delay(13000).animate({left:"-100%"});
+
+			$("#Photography-clarity").delay(85000).fadeIn();
+			$("#clarity").delay(86000).animate({left:"0%"});
+
+
+			$("#clarity").delay(17000).animate({left:"-100%"});
+			$("#Photographyy").delay(32000).animate({left:"100%"});
+
+
+			$("#Photography").delay(34000).animate({height:"0%"}).fadeOut();
+
+
+			$("#defs-ico").delay(105000).fadeIn().animate({opacity:"1",top:"0%"});
+
+			$("#defs").delay(106000).animate({opacity:"1",top:"0%"});
+
 
 
 
@@ -621,9 +692,13 @@
 
 							$("#home").delay(400).animate({width:"0%"},{duration:700}).fadeOut();	
 
+										$("#explore").delay(2000).animate({height:"50%"});
+
+
 										$("#name-svg").delay(2500).animate({top:"50%"});
 
-										$("#defs-ico").delay(2500).animate({top:"0%"});	
+										$("#defs-ico").delay(2300).fadeIn();
+										$("#defs-ico").delay(500).animate({top:"0%"});	
 				
 						}						
 
@@ -665,7 +740,10 @@
 
 						$("#name-svg").delay(3000).animate({top:"200%"});
 
-						$("#defs-ico").delay(3000).animate({top:"-100%"});	
+						$("#defs-ico").delay(3000).animate({top:"-100%"}).fadeOut();
+
+						$("#explore").delay(3800).animate({height:"0%"});
+
 
 							if (innerWidth>750) {
 						$("#home").delay(4000).fadeIn().animate({width:"80%"},{duration:1000});		
@@ -834,11 +912,16 @@ $("#toggle").click(function(e){
 							hidhomecounter=0;
 							$("#home").delay(400).animate({height:"1%"},{duration:700});
 
-							$("#home").delay(400).animate({width:"0%"},{duration:700}).fadeOut();	
+							$("#home").delay(400).animate({width:"0%"},{duration:700}).fadeOut();
+
+
+
+										$("#explore").delay(2000).animate({height:"50%"});
+
 
 										$("#name-svg").delay(2500).animate({top:"50%"});
 
-										$("#defs-ico").delay(2500).animate({top:"0%"});	
+										$("#defs-ico").fadeIn().delay(300).animate({top:"0%"});	
 				
 						}
 
