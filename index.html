@@ -458,7 +458,7 @@
 		<div id ="name-ico">
 			<?xml version="1.0" encoding="utf-8"?>
 				<svg  id="name-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 			viewBox="0 0 230 150" style="enable-background:new 0 0 200 150;" xml:space="preserve">
+	 			viewBox="0 0 230 170" style="enable-background:new 0 0 200 170;" xml:space="preserve">
 					<style type="text/css">
 
 						.st0z{fill:#ffff;}
@@ -697,7 +697,6 @@
 
 										$("#name-svg").delay(2500).animate({top:"50%"});
 
-										$("#defs-ico").delay(2300).fadeIn();
 										$("#defs-ico").delay(500).animate({top:"0%"});	
 				
 						}						
@@ -873,7 +872,7 @@ $("#toggle").click(function(e){
 		$("#volume").delay(750).fadeIn("slow");
 	}
 
-	else if (innerWidth<750) {
+	else{
 		$("#navright").delay(1000).animate({height:"240px"});
 
 
@@ -905,11 +904,16 @@ $("#toggle").click(function(e){
 
 $("#toggle").click(function(e){
 
-
+				if(innerWidth<750){
 
 					if (hidhomecounter==1) {
 
 							hidhomecounter=0;
+
+
+
+
+
 							$("#home").delay(400).animate({height:"1%"},{duration:700});
 
 							$("#home").delay(400).animate({width:"0%"},{duration:700}).fadeOut();
@@ -923,9 +927,9 @@ $("#toggle").click(function(e){
 
 										$("#defs-ico").fadeIn().delay(300).animate({top:"0%"});	
 				
-						}
+							}
 
-
+					}
 
 
 	if (innerHeight<350) {

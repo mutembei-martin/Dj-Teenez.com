@@ -73,13 +73,57 @@ top nav
   height: 20px;
   width: 40px;
   background: transparent;
-  overflow: hidden;
   float: left;
   cursor: pointer;
   transform: rotate(180deg);
 
 
 }
+
+
+#menu::after{
+  content: '>>>';
+  position: absolute;
+  top: -3px;
+  left: -60px;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+  color: #fff; 
+  animation:menuafte 3s linear forwards;animation-delay:20s;animation-iteration-count: infinite; 
+  opacity: 0;      
+}
+
+
+
+@-webkit-keyframes menuafte{
+              0%{
+                    
+                    opacity: 1;
+
+                  
+              }
+              25%{
+                    left: -60px;
+
+                  
+              }
+              50%{
+                    left: -50px;
+                    opacity: .1;
+                  
+              }75%{
+                    left: -60px;
+
+                  
+              }
+              100%{
+                   
+                    opacity: 1;
+                    
+              }
+              }
 
 
 
@@ -1166,8 +1210,7 @@ background: -moz-linear-gradient(30deg, transparent,transparent,#000000, #000000
 background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000000,#000,#000, #000,#000000, transparent,transparent);
   background: linear-gradient(30deg,transparent,transparent,#000000, #000000,#000,#000, #000,#000000, transparent,transparent);
   opacity: .9;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
 /*  display: none;*/
 
 }
@@ -1330,6 +1373,45 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 }
 }
 
+
+@media screen and (max-width: 420px) {
+
+
+
+#musicc{
+  font-size: 24px;
+
+}
+#sounds{
+  font-size: 17px;
+}
+#experiences{
+  font-size: 17px;
+}
+
+#travell{
+  font-size: 24px;
+}
+#tours{
+  font-size: 17px;
+
+}
+#sights{
+  font-size: 17px;
+}
+#Photographyy{
+  font-size: 24px;
+}
+#nature{
+  font-size: 17px;
+}
+#clarity{
+  font-size: 17px;
+}
+
+
+}
+
 @media screen and (max-width: 400px) {
     #navright{
   width: 80%;
@@ -1340,6 +1422,14 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 }
 }
 
+
+@media screen and (max-width: 350px) {
+
+
+#defs{
+  font-size: 16px;
+}
+}
 
 @media screen and (max-height: 600px) {
 
@@ -1409,6 +1499,48 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   margin-top: 10px;
 }
 
+#musicc{
+  line-height: 85px;
+  font-size: 36px;
+
+}
+#sounds{
+  line-height: 85px;
+  font-size: 23px;
+}
+#experiences{
+  line-height: 85px;
+  font-size: 23px;
+}
+
+#travell{
+  line-height: 85px;
+  font-size: 36px;
+}
+#tours{
+  line-height: 85px;
+  font-size: 23px;
+
+}
+#sights{
+  line-height: 85px;
+  font-size: 23px;
+}
+#Photographyy{
+  line-height: 85px;
+  font-size: 28px;
+}
+#nature{
+  line-height: 85px;
+  font-size: 23px;
+}
+#clarity{
+  line-height: 85px;
+  font-size: 23px;
+}
+
+
+
 }
 
 @media screen and (max-height: 400px) {
@@ -1457,6 +1589,51 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   text-align: center;
   margin-top: 5px;
 }
+
+
+#musicc{
+  line-height: 70px;
+  font-size: 30px;
+
+}
+#sounds{
+  line-height: 70px;
+  font-size: 17px;
+}
+#experiences{
+  line-height: 70px;
+  font-size: 17px;
+}
+
+#travell{
+  line-height: 70px;
+  font-size: 30px;
+}
+#tours{
+  line-height:70px;
+  font-size: 17px;
+
+}
+#sights{
+  line-height: 70px;
+  font-size: 17px;
+}
+#Photographyy{
+  line-height: 70px;
+  font-size: 21px;
+}
+#nature{
+  line-height: 70px;
+  font-size: 17px;
+}
+#clarity{
+  line-height: 70px;
+  font-size: 17px;
+}
+
+
+
+
 }
 
 
