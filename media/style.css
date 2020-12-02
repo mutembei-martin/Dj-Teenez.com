@@ -13,9 +13,27 @@
 
 
 
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('ComicSansMS.eot');
+    src: url('ComicSansMS.eot?#iefix') format('embedded-opentype'),
+        url('ComicSansMS.woff2') format('woff2'),
+        url('ComicSansMS.woff') format('woff'),
+        url('ComicSansMS.ttf') format('truetype'),
+        url('ComicSansMS.svg#ComicSansMS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 html{
     overflow: hidden;
 }
+
+
 
 body {
   position: relative;
@@ -226,6 +244,10 @@ top nav
 
   }
 
+
+
+  /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #rightop{
   position: relative;
     top: 5px;
@@ -402,6 +424,9 @@ top nav
   cursor: pointer;
 
   }
+
+
+  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #navleft{
   position: absolute;
   top: 50%;
@@ -539,6 +564,9 @@ top nav
   background:transparent;
 
 }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #navright{
   position: absolute;
   top: 30%;
@@ -728,11 +756,13 @@ top nav
   color: #0099ff;
   line-height: 55px;
   text-align: left;
-  /*margin-left: -100%;*/
   float: left;
   background:transparent;
-  /*display: none;*/
 }
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #middlebar{
   position: absolute;
   top: 55%;
@@ -743,6 +773,9 @@ top nav
   background: transparent;
   display: none;
 }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #name{
   position: relative;
   top: 0%;
@@ -751,9 +784,6 @@ top nav
   width: 100%;
     background:transparent;
   overflow: hidden;
-  /*border-bottom: 2px solid #fff;*/
-
-
 }
 
 #name-svg{
@@ -764,6 +794,9 @@ top nav
   height: 300%;
   width: 300%;
 }
+
+
+
 #explore{
   position: relative;
   top: 0%;
@@ -784,22 +817,23 @@ top nav
   height: 100%;
   width: 100%;
   background:transparent;
-  opacity: 0;
   display: none;
 }
 
 #defs{
   position: relative;
-  top: -100%;
+  top: 0%;
   left: 0%;
   color: #ffff00;
   font-size: 25px;
   text-align: center;
-  line-height: 24px;
-  margin-top: 5px;
+  line-height: 40px;
+  margin-top: 8px;
   font-family: 'Cutive Mono';
-  opacity: 0;
 }
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #music-ico{
   position: absolute;
@@ -809,7 +843,6 @@ top nav
   height: 100%;
   width: 400px;
   background:transparent;
-  /*display: none;*/
 
 }
 
@@ -1116,6 +1149,9 @@ top nav
 }
 
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 #bottomnav{
   position: absolute;
   bottom: -10%;
@@ -1199,6 +1235,11 @@ top nav
 
 
 
+
+/*//////////////////////////////////////////////////////////////////home//////////////////////////////////////////////////////////////////////////////*/
+
+
+
 #home{
   position: absolute;
   top: 52%;
@@ -1206,33 +1247,252 @@ top nav
   transform: translate(-50%,-50%);
   height: 1%;
   width: 0%;
-background: -moz-linear-gradient(30deg, transparent,transparent,#000000, #000000,#000,#000, #000,#000000, transparent,transparent);
-background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000000,#000,#000, #000,#000000, transparent,transparent);
-  background: linear-gradient(30deg,transparent,transparent,#000000, #000000,#000,#000, #000,#000000, transparent,transparent);
-  opacity: .9;
+background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+overflow: hidden;
+/*  opacity: .9;*/
   box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
-/*  display: none;*/
 
 }
 
-@media screen and (min-width: 1185px) {
-
-
-#defs{
-  line-height: 40px;
-  margin-top: 8px;
+#hidtop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background: #ff0000;
+  display: none;
 }
+
+#hidbottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  background: #ff0;
+  display: none;
 }
 
 
-@media screen and (max-width: 1185px) {
+#tophome{
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  background:transparent;
+  overflow: hidden;
+  /*display: none;*/
+
+}
+
+#newshome{
+  position: relative;
+  top: 0;
+  left: -100%;
+  height: 95%;
+  /*overflow: hidden;*/
+  width: 50%;
+  background: transparent;
+  float: left;
+}
+
+#newshome::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  height: 100%;
+  width: 100%;
+  /*overflow: hidden;*/
+background: -moz-linear-gradient(30deg, transparent,transparent,#ff0, #ff0,#ff0,#b3b300, #666600,#333300, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#ff0, #ff0,#ff0,#b3b300, #666600,#333300, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#ff0, #ff0,#ff0,#b3b300, #666600,#333300, transparent,transparent);
+  transform: skewX(-30deg);
+}
+
+#newsslider{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 60px;
+  overflow: hidden;
+  width: 100%;
+  background: -moz-linear-gradient(left, #000,#000,#000, #000,#000, transparent,transparent);
+  background: -webkit-linear-gradient(left, #000,#000,#000, #000,#000, transparent,transparent);
+  background: linear-gradient(left,#000,#000,#000, #000,#000, transparent,transparent);
+  float: left;
+  opacity: .96;
+  z-index: 1;
+}
+
+#news-ico{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 0%;
+  overflow: hidden;
+  width: 50%;
+  background:transparent;
+  float: left;
+/*  opacity: .96;
+  z-index: 1;*/
+
+}
+
+#news-ico::before{
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -20px;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+background: transparent;
+  border-right: 1px solid #ff0;
+  transform: skewX(-30deg);
+}
+
+#news{
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  z-index: -1;
+  opacity: 0;
+}
+
+#newstype{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 50%;
+  background: transparent;
+  float: left;
+}
+
+#newstype-options{
+  position: relative;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background:transparent;
+  float: left;
+}
+
+#newsselect-options{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  float: left;
+  color: #fff;
+  font-size: 28px;
+  border: none;
+  line-height: 60px;
+  font-weight: bolder;
+  font-family: 'Cutive Mono';
+}
+
+option{
+  color: #000;
+  font-size: 23px;
+  font-family: 'Cutive Mono';
+}
+#news-defshome{
+  position: relative;
+  top: 0;
+  left: 100%;
+  height: 95%;
+  overflow: hidden;
+  width: 50%;
+  background: transparent;
+  float: left;
+}
+
+.img-responsive,.img-responsive1{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: .6;
+
+}
+.img-responsive{
+    float: right;
+}
+.img-responsive1{
+    float: left;
+}
+
+#bottomhome{
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+#products-defshome{
+  position: relative;
+  top: 5%;
+  left: -100%;
+  height: 95%;
+  /*overflow: hidden;*/
+  width: 50%;
+  background: transparent;
+  float: left;
+}
+#productshome{
+  position: relative;
+  top: 5%;
+  left: 100%;
+  height: 95%;
+  overflow: hidden;
+  width: 50%;
+  background: transparent;
+  float: left;
+}
+
+#productshome::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 100%;
+  width: 100%;
+  /*overflow: hidden;*/
+background: -moz-linear-gradient(30deg, transparent,transparent,#999999,#fff,#fff,#fff, #fff,#fff, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,#fff,#fff, #fff,#fff, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#999999, #fff,#fff,#fff, #fff,#fff, transparent,transparent);
+  transform: skewX(-30deg);
+}
 
 
-#defs{
-  line-height: 44px;
-  /*margin-top: 20px;*/
-}
-}
+/*//////////////////////////////////////////////////////media queries ////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////750px///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 
 @media screen and (max-width: 750px) {
 
@@ -1359,7 +1619,58 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
 }
 
+#hidtop{
+  display: block;
 }
+
+#hidbottom{
+  display: block;
+}
+
+#tophome{
+  height:90%;
+  width: 100%;
+  background:transparent;
+  border-bottom: 1px solid #fff000;
+}
+
+#newshome{
+  height: 50%;
+  width: 100%;
+}
+
+#newsslider{
+  opacity: .9;
+}
+#news-defshome{
+  height: 50%;
+  width: 100%;
+}
+
+#bottomhome{
+  position: relative;
+  top: 10%;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  border-top: 1px solid #fff;
+  
+}
+
+#products-defshome{
+    top: 0;
+  height: 50%;
+  width: 100%;
+}
+#productshome{
+  top: 0;
+  height: 50%;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+
+}
+}
+/*/////////////////////////////////////////////////////////////////////////////////////600///////////////////////////////////////////////////////////////*/
 
 
 @media screen and (max-width: 600px) {
@@ -1372,6 +1683,26 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   left: 75%;
 }
 }
+
+/*//////////////////////////////////////////////////////////////////////////500//////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 500px) {
+
+  #news{
+  font-size: 26px;
+}
+
+#newsselect-options{
+  font-size: 23px;
+}
+
+option{
+  font-size: 20px;
+}
+}
+
+
+/*///////////////////////////////////////////////////////////////// 420////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 @media screen and (max-width: 420px) {
@@ -1409,8 +1740,23 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   font-size: 17px;
 }
 
+#news{
+  font-size: 20px;
+}
+
+option{
+  font-size: 16px;
+}
+
+#newsselect-options{
+  font-size: 19px;
+}
 
 }
+
+
+
+/*////////////////////////////////////////////////////////////////////////////400//////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 400px) {
     #navright{
@@ -1423,20 +1769,50 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 }
 
 
+
+/*///////////////////////////////////////////////////////////////////////////350px//////////////////////////////////////////////////////////////////////////*/
+
+
 @media screen and (max-width: 350px) {
 
+
+  #navleft{
+  position: absolute;
+  top: 35%;
+  left: 20px;
+  transform: translate(-50%,-50%);
+
+}
 
 #defs{
   font-size: 16px;
 }
+#newsslider{
+  height: 50px;
 }
+#news{
+  line-height: 50px;
+}
+
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////HEIGHT QUERIES //////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////600px//////////////////////////////////////////////////////////////////////////*/
+
+
 
 @media screen and (max-height: 600px) {
 
   #navleft{
   position: absolute;
   top: 35%;
-  left: 50px;
   transform: translate(-50%,-50%);
 
 }
@@ -1448,13 +1824,104 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 
 }
 
+#hidtop{
+  height: 10%;
+  display: block;
 }
+
+
+#hidbottom{
+  height: 10%;
+    display: block;
+}
+
+#tophome{
+  height: 90%; 
+}
+
+#newsslider{
+  height: 40px;
+}
+
+#news{
+  font-size: 17px;
+  line-height: 40px;
+}
+
+option{
+  font-size: 14px;
+}
+
+#newsselect-options{
+  font-size: 16px;
+}
+
+
+
+.img-responsive,.img-responsive1{
+  width: 100%;
+  height: auto;
+
+}
+.img-responsive{
+    float: right;
+}
+
+.img-responsive1{
+  float: left;
+}
+
+
+#bottomhome{
+  top: 10%;
+  height: 90%;
+}
+
+
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////430px//////////////////////////////////////////////////////////////////////////*/
+
+
+@media screen and (max-height: 530px) {
+
+  #newshome{
+  top: 0%;
+  width: 50%;
+  height: 100%;
+}
+
+#news-defshome{
+ top: 0%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+  #productshome{
+  top: 0%;
+  width: 50%;
+  height: 100%;
+}
+
+#products-defshome{
+ top: 0%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////500px//////////////////////////////////////////////////////////////////////////*/
+
+
 @media screen and (max-height: 500px) {
 
   #navleft{
   position: absolute;
   top: 40%;
-  left: 50px;
   transform: translate(-50%,-50%);
 
 }
@@ -1467,13 +1934,33 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 
 }
 
+#hidtop{
+  height: 15%;
 }
+
+#hidbottom{
+  height: 15%;
+}
+
+#tophome{
+  height: 85%; 
+}
+#bottomhome{
+  top: 15%;
+  height: 85%;
+}
+
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////450px//////////////////////////////////////////////////////////////////////////*/
+
+
 @media screen and (max-height: 450px) {
 
   #navleft{
   position: absolute;
   top: 50%;
-  left: 50px;
   transform: translate(-50%,-50%);
 }
 
@@ -1543,21 +2030,26 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
 
 }
 
+/*///////////////////////////////////////////////////////////////////////////400px//////////////////////////////////////////////////////////////////////////*/
+
+
 @media screen and (max-height: 400px) {
 
   #navleft{
   position: absolute;
   top: 50%;
-  left: 50px;
   transform: translate(-50%,-50%);
 }
 }
+
+/*///////////////////////////////////////////////////////////////////////////350px//////////////////////////////////////////////////////////////////////////*/
+
+
 @media screen and (max-height: 350px) {
 
   #navleft{
   position: absolute;
   top: 50%;
-  left: 50px;
   height: 200px;
   transform: translate(-50%,-50%);
 
@@ -1631,7 +2123,14 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#000000, #000
   font-size: 17px;
 }
 
+#newsslider{
+  height: 30px;
+}
 
+#news{
+  font-size: 16px;
+  line-height: 30px;
+}
 
 
 }
