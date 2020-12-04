@@ -522,8 +522,8 @@
 
 
 <section id ="home">
-	<div id ="hidtop">News</div>
-	<div id ="hidbottom">Products</div>
+	<div id ="hidtop">News...</div>
+	<div id ="hidbottom">Products...</div>
 	<div id ="tophome">
 		<div id ="newshome">
 			<div id ="newsslider">
@@ -536,7 +536,6 @@
 							<option>Music</option>
 							<option>Travel</option>
 							<option>Fashion</option>
-
 						</select>
 					</div>
 				</div>
@@ -550,8 +549,9 @@
 		<div id ="products-defshome">
 			<img class="img-responsive1" src="media/13.jpg">
 		</div>
-		<div id ="productshome"></div>
-
+		<div id ="productshome">
+			
+		</div>
 	</div>
 </section>
 
@@ -641,18 +641,6 @@ console.log(isMobile);
 
 		}
 
-
-/////////////////////////////////////////navleft/////////////////////////////////////////////////////////////////
-			$("#navleft").delay(2000).fadeIn();
-
-
-
-///////////////////////////////////////navright/////////////////////////////////////////////////////////////////
-
-		if (innerWidth < 750) {
-			$("#navright").fadeIn();
-		}	
-			
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			$("#bottomnav").delay(1000).fadeIn().animate({bottom:"0"});
@@ -769,15 +757,29 @@ console.log(isMobile);
 
 
 
+
+
+
+
+
+/////////////////////////////////////////navleft/////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////navright/////////////////////////////////////////////////////////////////
+
+	
 			
 
 
-						$("#menu").delay(1000).fadeOut();
+						$("#menu").delay(800).fadeOut();
+						$("#navleft").fadeIn();
 						$("#menu1").fadeIn();
 						$("#hidhome").fadeIn().delay(200).animate({opacity:"1",marginLeft:"0%"});
-						$("#hidmix").delay(300).fadeIn().delay(300).animate({opacity:"1",marginLeft:"0%"});						
-						$("#hidwork").delay(400).fadeIn().delay(400).animate({opacity:"1",marginLeft:"0%"});						
-						$("#hidctct").delay(500).fadeIn().delay(500).animate({opacity:"1",marginLeft:"0%"});
+						$("#hidmix").delay(300).fadeIn().delay(500).animate({opacity:"1",marginLeft:"0%"});						
+						$("#hidwork").delay(400).fadeIn().delay(800).animate({opacity:"1",marginLeft:"0%"});						
+						$("#hidctct").delay(500).fadeIn().delay(1100).animate({opacity:"1",marginLeft:"0%"});
 
 						if (hidhomecounter==1) {
 
@@ -807,7 +809,8 @@ console.log(isMobile);
 						$("#hidhome").delay(1900).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeOut();
 						$("#hidmix").delay(1600).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
 						$("#hidwork").delay(1300).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
-						$("#hidctct").delay(1000).animate({marginLeft:"-100%",opacity:"0"}).fadeIn();						
+						$("#hidctct").delay(1000).animate({marginLeft:"-100%",opacity:"0"}).fadeIn();
+						$("#navleft").delay(3000).fadeOut();						
 
 
 				});
@@ -828,6 +831,7 @@ console.log(isMobile);
 						$("#hidmix").delay(1600).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
 						$("#hidwork").delay(1300).animate({marginLeft:"-100%",opacity:"0"}).delay(500).fadeIn();						
 						$("#hidctct").delay(1000).animate({marginLeft:"-100%",opacity:"0"}).fadeIn();	
+						$("#navleft").delay(3000).fadeOut();
 
 						$("#name-svg").delay(3000).animate({top:"200%"});
 
@@ -996,7 +1000,10 @@ $("#toggle").click(function(e){
 	}
 
 	else{
-		$("#navright").delay(1000).animate({height:"240px"});
+
+			$("#navright").fadeIn();
+
+			$("#navright").delay(1000).animate({height:"240px"});
 
 
 
@@ -1054,7 +1061,9 @@ $("#toggle").click(function(e){
 
 
 	if (innerHeight<350) {
-		$("#navright").delay(1000).animate({height:"180px"});
+
+			$("#navright").fadeIn();
+			$("#navright").delay(1000).animate({height:"180px"});
 
 
 
@@ -1089,23 +1098,25 @@ $("#close").click(function(e){
 		$("#close").delay(1000).fadeOut();	
 
 
-			$("#hidsearch-ico").delay(1500).animate({top:"100%"}).fadeOut();
+			$("#hidsearch-ico").delay(500).animate({top:"100%"}).fadeOut();
 
-			$("#hidsearchit").delay(1800).animate({top:"100%"}).fadeOut();
-
-
-
-			$("#hidlogo-ico").delay(2100).animate({top:"100%"}).fadeOut();
-
-			$("#hidlogo-content").delay(2400).animate({top:"100%"}).fadeOut();
+			$("#hidsearchit").delay(800).animate({top:"100%"}).fadeOut();
 
 
-			$("#hidplay-ico").delay(2700).animate({top:"100%"}).fadeOut();
 
-			$("#hidplay-content").delay(3000).animate({top:"100%"}).fadeOut();
+			$("#hidlogo-ico").delay(1100).animate({top:"100%"}).fadeOut();
+
+			$("#hidlogo-content").delay(1400).animate({top:"100%"}).fadeOut();
 
 
-			$("#navright").delay(3300).animate({height:"0px"});
+			$("#hidplay-ico").delay(1700).animate({top:"100%"}).fadeOut();
+
+			$("#hidplay-content").delay(2000).animate({top:"100%"}).fadeOut();
+
+
+			$("#navright").delay(2300).animate({height:"0px"});
+
+			$("#navright").fadeOut();
 
 
 
