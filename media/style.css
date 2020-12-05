@@ -1552,7 +1552,9 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   font-family: 'Cutive Mono';
 }
 
-
+#productsselect-options option{
+    background: transparent;
+}
 
 #products-ico{
   position: relative;
