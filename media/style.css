@@ -1518,7 +1518,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   left: 0;
   height: 100%;
   overflow: hidden;
-  width: 50%;
+  width: 40%;
   background: transparent;
   float: left;
 }
@@ -1560,7 +1560,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   left: 0;
   height: 100%;
   overflow: hidden;
-  width: 50%;
+  width: 60%;
   background:#000;
   float: left;
 /*  opacity: .96;
@@ -1574,7 +1574,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   top: 20%;
   right: 0;
   height: 60%;
-  width: 80%;
+  width: 90%;
   overflow: hidden;
   background: transparent;
   border-left: 2px solid #fff;
