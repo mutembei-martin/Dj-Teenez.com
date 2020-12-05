@@ -1363,7 +1363,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#ff0, #ff0,#f
   width: 100%;
   overflow: hidden;
 background: transparent;
-  border-right: 1px solid #ff0;
+  border-right: 2px solid #ff0;
   transform: skewX(-30deg);
 }
 
