@@ -1819,13 +1819,14 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
 @media screen and (max-width: 500px) {
 
   #news{
-  font-size: 26px;
+  font-size: 23px;
 }
 
 #newsselect-options{
-  font-size: 23px;
+  font-size: 20px;
 }
 #productsselect-options{
+    font-size: 20px;
   text-align: right;
 }
 
