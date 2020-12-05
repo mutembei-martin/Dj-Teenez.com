@@ -1793,7 +1793,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   top: 0;
   height: 50%;
   width: 100%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid #fff;
 
 }
 
