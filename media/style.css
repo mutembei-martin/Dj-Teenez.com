@@ -1739,12 +1739,14 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
    font-size: 17px;
   line-height: 60px;
   display: block;
+  border-bottom: 1px solid #fff;
 }
 
 #tophome{
   height:90%;
   width: 100%;
   background:transparent;
+  border-top: 1px solid #ff0;
   border-bottom: 1px solid #fff000;
 }
 
@@ -1789,7 +1791,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   top: 0;
   height: 50%;
   width: 100%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 
 }
 
