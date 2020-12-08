@@ -464,6 +464,28 @@ top nav
   background:transparent;
 
 }
+
+#home-ico:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 0%;
+  cursor: pointer;
+  background:#fff;
+  transition: .5s;
+}
+#home-ico:hover:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+  cursor: pointer;
+  background:#fff;
+}
 #home-svg{
   position: absolute;
   top: 50%;
@@ -505,6 +527,29 @@ top nav
 
 }
 
+#mix-ico:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 0%;
+  cursor: pointer;
+  background:#fff;
+  transition: .5s;
+}
+
+#mix-ico:hover:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+  cursor: pointer;
+  background:#fff;
+}
+
 #hidwork{
   position: relative;
   width: 100%;
@@ -536,6 +581,30 @@ top nav
 
 }
 
+
+#work-ico:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 0%;
+  cursor: pointer;
+  background:#fff;
+  transition: .5s;
+}
+
+#work-ico:hover:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+  cursor: pointer;
+  background:#fff;
+}
+
 #hidctct{
   position: relative;
   width: 100%;
@@ -563,6 +632,30 @@ top nav
   cursor: pointer;
   background:transparent;
 
+}
+
+
+#ctct-ico:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 0%;
+  cursor: pointer;
+  background:#fff;
+  transition: .5s;
+}
+
+#ctct-ico:hover:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+  cursor: pointer;
+  background:#fff;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1526,7 +1619,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
 #productstype-options{
   position: relative;
   top: 0;
-  left: 0;
+  left: 100%;
   height: 100%;
   overflow: hidden;
   width: 100%;
@@ -1560,13 +1653,13 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   position: relative;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 0%;
   overflow: hidden;
   width: 60%;
   background:#000;
   float: left;
-/*  opacity: .96;
-  z-index: 1;*/
+  opacity: .96;
+  z-index: 1;
 
 }
 
@@ -1595,12 +1688,192 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   letter-spacing: 1px;
   font-weight: bold;
   background: transparent;
-/*  z-index: -1;
-  opacity: 0;*/
+  z-index: -1;
+  opacity: 0;
 }
+
+
+
+
+#mixsection{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 1%;
+  width: 0%;
+background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+overflow: hidden;
+  opacity: .75;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
+
+}
+
+
+#mixintrosection{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  background:#fff ;
+  float: left;
+}
+
+#mymixes{
+  position: relative;
+  left:0;
+  top:0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background:  transparent;
+}
+#mixes{
+  position: relative;
+  left:0;
+  top:70%;
+  color: #9900cc;
+  font-size: 2.5em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  text-align: center;
+  line-height: 80px;
+}
+#intromixes{
+  position: relative;
+  left:0;
+  top:0;
+  height: 60px;
+  width: 100%;
+  background:#000;
+}
+
+#intro{
+  position: relative;
+  left:0;
+  top:0;
+  color: #fff;
+  font-size: 2em;
+  font-family:'Cutive Mono';
+  text-align: center;
+  text-decoration: underline;
+  line-height: 60px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+#introrec{
+  position: relative;
+  left:0;
+  top:0;
+  height: 50px;
+  width: 100%;
+  background:transparent;
+}
+
+
+#rectrailers{
+  position: relative;
+  left:0;
+  top:0;
+  color: #000;
+  font-size: 1.5em;
+  font-family:'Comic Sans MS';
+  text-align:left;
+  padding-left: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#introtrailers{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 200px);
+  width: 94%;
+  background:#000;
+}
+
+#mixplaylistsection{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  background:#9900cc;
+  float: left;
+}
+
+#worksection{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 1%;
+  width: 0%;
+background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+overflow: hidden;
+/*  opacity: .9;*/
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
+
+}
+
+
+#contactsection{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 1%;
+  width: 0%;
+background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
+  background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
+overflow: hidden;
+/*  opacity: .9;*/
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
+
+}
+
+
+
+
+
+
+
+
 
 /*//////////////////////////////////////////////////////media queries ////////////////////////////////////////////////////////////////////////////////////*/
 
+@media screen and (max-width: 1000px) {
+
+  #mixintrosection{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width:100%;
+
+}
+
+#mixplaylistsection{
+  position: absolute;
+  left:0;
+  top:10%;
+  height: 90%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+
+}
 
 /*////////////////////////////////////////////750px///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1800,6 +2073,29 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
 #productsselect-options{
   text-align: right;
 }
+
+
+#mixsection{
+
+  background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+}
+
+#worksection{
+
+  background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+}
+
+#contactsection{
+
+  background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+}
+
 }
 /*/////////////////////////////////////////////////////////////////////////////////////600///////////////////////////////////////////////////////////////*/
 
