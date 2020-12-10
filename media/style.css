@@ -2658,7 +2658,7 @@ option{
   bottom:0;
   height: calc(100% - 220px);
   width: 94%;
-  background:#000;
+  background:#0FF;
 }
 
 #viewalltrailers{
