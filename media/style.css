@@ -2670,7 +2670,8 @@ option{
 
 
 #viewall{
-  font-size: .8em;
+  font-size: .7em;
+  color: #000;
   line-height: 30px;
 }
 
@@ -2682,7 +2683,7 @@ option{
 }
 
 #viewfull{
-  font-size: .8em;
+  font-size: .7em;
   line-height: 30px;
 }
 
