@@ -1721,15 +1721,6 @@ overflow: hidden;
   z-index: 2;
 }
 
-#mymixes{
-  position: relative;
-  left:0;
-  top:0;
-  height: 80px;
-  overflow: hidden;
-  width: 100%;
-  background:  transparent;
-}
 
 #hidmyplaylistmixes{
   position: absolute;
@@ -2552,6 +2543,41 @@ overflow: hidden;
 option{
   font-size: 20px;
 }
+
+#introtrailers{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 220px);
+  width: 94%;
+  background:#0FF;
+}
+
+#viewalltrailers{
+  top:15px;
+  height: 30px;
+  width: 120px;
+}
+
+
+
+#viewall{
+  font-size: .7em;
+  color: #000;
+  line-height: 30px;
+}
+
+
+#viewfullplaylist{
+  top:-15px;
+  height: 30px;
+  width: 150px;
+}
+
+#viewfull{
+  font-size: .7em;
+  line-height: 30px;
+}
 }
 
 
@@ -2652,40 +2678,7 @@ option{
 
 }
 
-#introtrailers{
-  position: relative;
-  left:3%;
-  bottom:0;
-  height: calc(100% - 220px);
-  width: 94%;
-  background:#000;
-}
 
-#viewalltrailers{
-  top:15px;
-  height: 30px;
-  width: 120px;
-}
-
-
-
-#viewall{
-  font-size: .7em;
-  color: #000;
-  line-height: 30px;
-}
-
-
-#viewfullplaylist{
-  top:-15px;
-  height: 30px;
-  width: 150px;
-}
-
-#viewfull{
-  font-size: .7em;
-  line-height: 30px;
-}
 
 #rectrailers{
   font-size: 1em;
@@ -2751,7 +2744,7 @@ option{
   position: relative;
   left:3%;
   bottom:0;
-  height: calc(100% - 205px);
+  height: calc(100% - 160px);
   width: 94%;
   background:#000;
 }
@@ -2910,11 +2903,42 @@ background:transparent;
 
 }
 
+#introtrailers{
+  height: calc(100% - 215px);
+}
+
+
+#viewalltrailers{
+  top:15px;
+  height: 35px;
+  width: 100px;
+}
+
+
+
+#viewall{
+  font-size: .65em;
+  line-height: 35px;
+}
+
+
+#viewfullplaylist{
+  top:-15px;
+  height: 35px;
+  width: 130px;
+}
+
+#viewfull{
+  font-size: .65em;
+  line-height: 35px;
+}
+
+
 
 }
 
 
-/*///////////////////////////////////////////////////////////////////////////430px//////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////530px//////////////////////////////////////////////////////////////////////////*/
 
 
 @media screen and (max-height: 530px) {
@@ -2946,6 +2970,50 @@ background:transparent;
 
 #productsselect-options{
     text-align: right;
+}
+
+#mymixes{
+  height: 45px;
+}
+
+#mixes{
+  font-size: 1.55em;
+  line-height: 45px;
+}
+
+#hidmyplaylistmixes{
+  height: 45px;
+}
+
+
+#introtrailers{
+  height: calc(100% - 195px);
+}
+
+
+#viewalltrailers{
+  top:20px;
+  height: 25px;
+  width: 100px;
+}
+
+
+
+#viewall{
+  font-size: .65em;
+  line-height: 25px;
+}
+
+
+#viewfullplaylist{
+  top:-5px;
+  height: 25px;
+  width: 130px;
+}
+
+#viewfull{
+  font-size: .65em;
+  line-height: 25px;
 }
 
 
@@ -2989,6 +3057,9 @@ background:transparent;
 #productsselect-options{
     text-align: right;
 }
+
+
+
 
 
 }
@@ -3069,6 +3140,69 @@ background:transparent;
 
 #productsselect-options{
     text-align: right;
+}
+
+
+
+#mymixes{
+  height: 40px;
+}
+
+#mixes{
+  font-size: 1.3em;
+  line-height: 40px;
+}
+
+#hidmyplaylistmixes{
+  height: 40px;
+}
+
+
+#intromixes{
+  height: 35px;
+}
+
+#intro{
+  font-size: 1.1em;
+  line-height: 35px;
+}
+
+#introrec{
+  height: 30px;
+}
+
+
+#rectrailers{
+  font-size: .85em;
+  line-height: 30px;
+}
+
+#introtrailers{
+  height: calc(100% - 140px);
+}
+
+
+#viewalltrailers{
+  top:10px;
+  height: 20px;
+}
+
+
+
+#viewall{
+  font-size: .5em;
+  line-height: 20px;
+}
+
+
+#viewfullplaylist{
+  top:-10px;
+  height: 20px;
+}
+
+#viewfull{
+  font-size: .5em;
+  line-height: 20px;
 }
 
 
