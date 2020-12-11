@@ -2548,9 +2548,35 @@ option{
   position: relative;
   left:3%;
   bottom:0;
-  height: calc(100% - 220px);
+  height: calc(100% - 210px);
   width: 94%;
-  background:#0FF;
+  background:#000;
+}
+
+
+#viewalltrailers{
+  top:15px;
+  height: 25px;
+  width: 100px;
+}
+
+
+
+#viewall{
+  font-size: .8em;
+  line-height: 25px;
+}
+
+
+#viewfullplaylist{
+  top:-10px;
+  height: 25px;
+  width: 130px;
+}
+
+#viewfull{
+  font-size: .8em;
+  line-height: 25px;
 }
 
 }
