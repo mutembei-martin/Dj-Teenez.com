@@ -2555,29 +2555,27 @@ option{
 
 
 #viewalltrailers{
-  top:15px;
-  height: 25px;
-  width: 100px;
+  height: 30px;
 }
 
 
 
 #viewall{
-  font-size: .8em;
-  line-height: 25px;
+  font-size: .9em;
+  line-height: 30px;
 }
 
 
 #viewfullplaylist{
-  top:-10px;
-  height: 25px;
-  width: 130px;
+  top: -20px;
+  height: 30px;
 }
 
 #viewfull{
-  font-size: .8em;
-  line-height: 25px;
+  font-size: .9em;
+  line-height: 30px;
 }
+
 
 }
 
