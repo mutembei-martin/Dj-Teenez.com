@@ -2133,8 +2133,8 @@ overflow: hidden;
   height: 50%;
   width: 50%;
   background:transparent;
-  border-left: 1px solid #000;
-  border-top: 1px solid #000;  
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;  
   cursor: pointer;
 }
 
@@ -2146,8 +2146,8 @@ overflow: hidden;
   height: 50%;
   width: 50%;
   background:transparent;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;  
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;  
   cursor: pointer;
 }
 
@@ -2161,7 +2161,7 @@ overflow: hidden;
   font-family:serif, 'Cutive Mono';
   text-align:center;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 2px;
   cursor: pointer;
 }
