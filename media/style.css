@@ -1767,7 +1767,7 @@ overflow: hidden;
 #mixes{
   position: relative;
   left:0;
-  top:70%;
+  top:0;
   color: #9900cc;
   font-size: 2.5em;
   font-family:'Elephant';
@@ -1902,6 +1902,31 @@ overflow: hidden;
   width:100%;
   background:  #fff;
      z-index: 2;
+}
+
+#hidmymixes{
+  position: absolute;
+  left:0;
+  top:0;
+  height: 80px;
+  overflow: hidden;
+  width: 50%;
+  float: left;
+  background:#fff;
+  display: none;
+}
+
+#mixess{
+  position: relative;
+  left:0;
+  top:0;
+  color: #9900cc;
+  font-size: 2.5em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  text-align: center;
+  line-height: 80px;
+   z-index: 1;
 }
 
 #myplaylistmixes:after{
@@ -2194,6 +2219,7 @@ overflow: hidden;
   height: 100%;
   width:100%;
 
+
 }
 
 #mymixes{
@@ -2216,15 +2242,53 @@ overflow: hidden;
   display: block;
 }
 
+#hidmyplaylistmixes span:nth-child(1){margin-left:20%;width:20px;float: left;}
+#hidmyplaylistmixes span:nth-child(2){margin-left:10%;width:20px;float: left;}
+#hidmyplaylistmixes span:nth-child(3){margin-left:10%;width:20px;float: left;}
+#hidmyplaylistmixes span:nth-child(4){margin-left:10%;width:20px;float: left;}
+#hidmyplaylistmixes span:nth-child(5){margin-left:15%;width:20px;float: left;}
+
+
+
 #mixplaylistsection{
   position: absolute;
   left:0;
-  top:10%;
-  height: 90%;
+  top:0;
+  height: 100%;
   width: 100%;
   z-index: 2;
-  display: none;
 }
+
+
+#hidmymixes{
+  position: absolute;
+  left:0;
+  top:0;
+  height: 80px;
+  overflow: hidden;
+  width: 50%;
+  float: left;
+  background:#fff;
+  display: block;
+}
+
+#myplaylistmixes{
+  position: relative;
+  left: 50%;
+  top:0;
+  height: 80px;
+  width:50%;
+  background:  #fff;
+  z-index: 2;
+  display: block;
+}
+
+
+#myplaylistmixes span:nth-child(1){margin-left:20%;width:20px;float: left;}
+#myplaylistmixes span:nth-child(2){margin-left:10%;width:20px;float: left;}
+#myplaylistmixes span:nth-child(3){margin-left:10%;width:20px;float: left;}
+#myplaylistmixes span:nth-child(4){margin-left:10%;width:20px;float: left;}
+#myplaylistmixes span:nth-child(5){margin-left:15%;width:20px;float: left;}
 
 
 }
@@ -2475,13 +2539,47 @@ overflow: hidden;
 
 
 #introtrailers{
-  position: relative;
-  left:3%;
-  bottom:0;
   height: calc(100% - 230px);
-  width: 94%;
-  background:#000;
 }
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#hidmymixes{
+  height: 60px;
+}
+
+#mixess{
+  position: relative;
+  left:0;
+  top:0;
+  color: #9900cc;
+  font-size: 1.85em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  text-align: center;
+  line-height: 60px;
+   z-index: 1;
+}
+
+
+#myplaylistmixes{
+
+  height: 60px;
+}
+
+#mixesplaylist{
+  font-size: 1.35em;
+}
+
+
+#theplaylist{
+  height: calc(100% - 230px);
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 #worksection{
 
@@ -2521,6 +2619,13 @@ overflow: hidden;
 #hidmyplaylistmixes span:nth-child(5){margin-left:10%;width:10px;float: left;}
 
 
+
+
+#myplaylistmixes span:nth-child(1){margin-left:30%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(2){margin-left:10%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(3){margin-left:10%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(4){margin-left:10%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(5){margin-left:10%;width:10px;float: left;}
 
 }
 
@@ -2577,7 +2682,47 @@ option{
   line-height: 35px;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+
+
+#theplaylist{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 230px);
+  width: 94%;
+  background:#000;
+}
+
+
+#viewallplaylist{
+  top: 15px;
+  height: 35px;
+}
+
+
+
+#viewall1{
+  font-size: .9em;
+  line-height: 35px;
+}
+
+
+#viewtrailers{
+  top: -20px;
+  height: 35px;
+}
+
+#viewvideotrailers{
+  font-size: .9em;
+  line-height: 35px;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 }
 
 
@@ -2684,6 +2829,52 @@ option{
   font-size: 1em;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#hidmymixes{
+  height: 60px;
+}
+
+#mixess{
+  position: relative;
+  left:0;
+  top:0;
+  color: #9900cc;
+  font-size: 1.5em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  text-align: center;
+  line-height: 60px;
+   z-index: 1;
+}
+
+#myplaylistmixes{
+  height: 60px;
+}
+
+#playlistmixes{
+  height: 50px;
+}
+
+
+#mixesplaylist{
+  font-size: 1.3em;
+  line-height: 50px;
+
+}
+
+
+
+#recplaylist{
+  font-size: 1em;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 }
 
 
@@ -2737,6 +2928,49 @@ option{
   line-height: 25px;
 }
 
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#theplaylist{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 210px);
+  width: 94%;
+  background:#000;
+}
+
+
+#viewallplaylist{
+  top:15px;
+  height: 25px;
+  width: 100px;
+}
+
+
+
+#viewall1{
+  font-size: .8em;
+  line-height: 25px;
+}
+
+
+#viewtrailers{
+  top:-10px;
+  height: 25px;
+  width: 130px;
+}
+
+#viewvideotrailers{
+  font-size: .8em;
+  line-height: 25px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 }
 
 
@@ -2776,6 +3010,24 @@ option{
 
 
 #introtrailers{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 160px);
+  width: 94%;
+  background:#000;
+}
+
+
+
+#myplaylistmixes span:nth-child(1){margin-left:30%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(2){margin-left:7%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(3){margin-left:7%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(4){margin-left:7%;width:10px;float: left;}
+#myplaylistmixes span:nth-child(5){margin-left:8%;width:10px;float: left;}
+
+
+#theplaylist{
   position: relative;
   left:3%;
   bottom:0;
@@ -2941,6 +3193,55 @@ background:transparent;
 }
 
 
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#playlistmixes{
+  height: 45px;
+}
+
+
+#mixesplaylist{
+  font-size: 1.2em;
+  line-height: 45px;
+
+}
+
+#theplaylist{
+  height: calc(100% - 215px);
+}
+
+
+#viewallplaylist{
+  top:15px;
+  height: 35px;
+  width: 100px;
+}
+
+
+
+#viewall1{
+  font-size: .85em;
+  line-height: 35px;
+}
+
+
+#viewtrailers{
+  top:-20px;
+  height: 35px;
+  width: 130px;
+}
+
+#viewvideotrailers{
+  font-size: .85em;
+  line-height: 35px;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 }
 
@@ -2998,31 +3299,32 @@ background:transparent;
 }
 
 
-/*#viewalltrailers{
-  top:20px;
-  height: 25px;
-  width: 100px;
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#hidmymixes{
+  height: 45px;
+}
+
+
+#mixess{
+  font-size: 1.55em;
+  line-height: 45px;
+}
+
+
+#myplaylistmixes{
+  height: 45px;
+}
+
+
+#theplaylist{
+  height: calc(100% - 195px);
 }
 
 
 
-#viewall{
-  font-size: .65em;
-  line-height: 25px;
-}
 
-
-#viewfullplaylist{
-  top:-5px;
-  height: 25px;
-  width: 130px;
-}
-
-#viewfull{
-  font-size: .65em;
-  line-height: 25px;
-}*/
-
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 }
 
@@ -3113,6 +3415,63 @@ background:transparent;
   top:-25px;
 }
 
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#hidmymixes{
+  height: 40px;
+}
+
+#mixess{
+  font-size: 1.3em;
+  line-height: 40px;
+}
+
+
+#myplaylistmixes{
+  height: 40px;
+}
+
+
+#playlistmixes{
+  height: 35px;
+}
+
+#mixesplaylist{
+  font-size: 1.1em;
+  line-height: 35px;
+}
+
+#playlistrec{
+  height: 30px;
+}
+
+
+#recplaylist{
+  font-size: .85em;
+  line-height: 30px;
+}
+
+#theplaylist{
+  height: calc(100% - 160px);
+}
+
+
+#viewallplaylist{
+  top:10px;
+}
+
+
+#viewtrailers{
+  top:-25px;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 }
 
@@ -3228,6 +3587,46 @@ background:transparent;
 }
 
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#theplaylist{
+  position: relative;
+  left:3%;
+  bottom:0;
+  height: calc(100% - 150px);
+  width: 94%;
+  background:#000;
+}
+
+
+#viewallplaylist{
+  height: 30px;
+}
+
+
+
+#viewall1{
+  font-size: .9em;
+  line-height: 30px;
+}
+
+
+#viewtrailers{
+  top: -20px;
+  height: 30px;
+}
+
+#viewvideotrailers{
+  font-size: .9em;
+  line-height: 30px;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 
 }
@@ -3282,6 +3681,51 @@ background:transparent;
   line-height: 25px;
 }
 
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+#playlistmixes{
+  height: 30px;
+}
+
+#mixesplaylist{
+  font-size: 1em;
+  line-height: 30px;
+}
+
+
+#theplaylist{
+  height: calc(100% - 135px);
+}
+
+#viewallplaylist{
+  height: 25px;
+  top:5px;
+}
+
+
+#viewtrailers{
+  height: 25px;
+  top:-20px;
+}
+
+#viewall1{
+  font-size: .7em;
+  line-height: 25px;
+}
+#viewvideotrailers{
+  font-size: .7em;
+  line-height: 25px;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 }
