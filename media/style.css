@@ -2177,8 +2177,8 @@ overflow: hidden;
   height: 50%;
   width: 50%;
   background:transparent;
-  border-left: 2px solid #000;
-  border-top: 2px solid #000;  
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;  
   cursor: pointer;
     transition: .5s;
 }
@@ -2191,8 +2191,8 @@ overflow: hidden;
   height: 50%;
   width: 50%;
   background:transparent;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;  
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;  
   cursor: pointer;
   transition: .5s;
 }
@@ -2214,7 +2214,7 @@ overflow: hidden;
   left:0;
   top:0;
   color: #000;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family:serif;
   text-align:center;
   line-height: 40px;
@@ -2784,7 +2784,7 @@ option{
 }
 
 #viewvideotrailers{
-  font-size: 1.1em;
+  font-size: .9em;
   line-height: 35px;
 }
 
@@ -3032,7 +3032,7 @@ option{
 }
 
 #viewvideotrailers{
-  font-size: 1em;
+  font-size: .8em;
   line-height: 25px;
 }
 
@@ -3303,7 +3303,7 @@ background:transparent;
 }
 
 #viewvideotrailers{
-  font-size: 1.05em;
+  font-size: .85em;
   line-height: 35px;
 }
 
@@ -3687,7 +3687,7 @@ background:transparent;
 }
 
 #viewvideotrailers{
-  font-size: 1.1em;
+  font-size: .9em;
   line-height: 30px;
 }
 
@@ -3786,7 +3786,7 @@ background:transparent;
   line-height: 25px;
 }
 #viewvideotrailers{
-  font-size: .9em;
+  font-size: .7em;
   line-height: 25px;
 }
 
