@@ -1853,6 +1853,7 @@ overflow: hidden;
   border-left: 1px solid #9900cc;
   border-top: 1px solid #9900cc;  
   cursor: pointer;
+    transition: .5s;
 }
 
 #viewalltrailers:after{
@@ -1866,6 +1867,19 @@ overflow: hidden;
   border-right: 1px solid #9900cc;
   border-bottom: 1px solid #9900cc;  
   cursor: pointer;
+  transition: .5s;
+}
+
+
+
+#viewalltrailers:hover:before{
+  height: 100%;
+  width: 100%;
+}
+
+#viewalltrailers:hover:after{
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -2029,6 +2043,7 @@ overflow: hidden;
   border-left: 1px solid #fff;
   border-top: 1px solid #fff;  
   cursor: pointer;
+  transition: .5s;
 }
 
 #viewallplaylist:after{
@@ -2042,7 +2057,21 @@ overflow: hidden;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;  
   cursor: pointer;
+    transition: .5s;
 }
+
+
+
+#viewallplaylist:hover:before{
+  height: 100%;
+  width: 100%;
+}
+
+#viewallplaylist:hover:after{
+  height: 100%;
+  width: 100%;
+}
+
 
 
 #viewall1{
@@ -2081,6 +2110,7 @@ overflow: hidden;
   border-left: 1px solid #000;
   border-top: 1px solid #000;  
   cursor: pointer;
+    transition: .5s;
 }
 
 #viewfullplaylist:after{
@@ -2094,7 +2124,20 @@ overflow: hidden;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;  
   cursor: pointer;
+  transition: .5s;
 }
+
+
+#viewfullplaylist:hover:before{
+  height: 100%;
+  width: 100%;
+}
+
+#viewfullplaylist:hover:after{
+  height: 100%;
+  width: 100%;
+}
+
 
 
 #viewfull{
@@ -2124,6 +2167,7 @@ overflow: hidden;
   float:right;
   background:transparent;
   cursor: pointer;
+
 }
 #viewtrailers:before{
   content: '';
@@ -2136,6 +2180,7 @@ overflow: hidden;
   border-left: 2px solid #000;
   border-top: 2px solid #000;  
   cursor: pointer;
+    transition: .5s;
 }
 
 #viewtrailers:after{
@@ -2149,7 +2194,19 @@ overflow: hidden;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;  
   cursor: pointer;
+  transition: .5s;
 }
+
+#viewtrailers:hover:before{
+  height: 100%;
+  width: 100%;
+}
+
+#viewtrailers:hover:after{
+  height: 100%;
+  width: 100%;
+}
+
 
 
 #viewvideotrailers{
@@ -2218,7 +2275,7 @@ overflow: hidden;
   top:0;
   height: 100%;
   width:100%;
-
+  
 
 }
 
@@ -2254,9 +2311,10 @@ overflow: hidden;
   position: absolute;
   left:0;
   top:0;
-  height: 100%;
+  height:0;
   width: 100%;
   z-index: 2;
+  display: none;
 }
 
 
@@ -2289,6 +2347,17 @@ overflow: hidden;
 #myplaylistmixes span:nth-child(3){margin-left:10%;width:20px;float: left;}
 #myplaylistmixes span:nth-child(4){margin-left:10%;width:20px;float: left;}
 #myplaylistmixes span:nth-child(5){margin-left:15%;width:20px;float: left;}
+
+
+
+
+#viewallplaylist{
+  display: none;
+}
+#viewtrailers{
+  display: none;
+
+}
 
 
 }

@@ -1579,6 +1579,43 @@ $("#playit").click(function(){
 
 
 
+//////////////////////////////////////////////////////M I X E S      S E C T I O N ////////////////////////////////////////////////////////////////////////////////////
+
+
+
+$("#viewfullplaylist").click(function(e){
+
+	e.preventDefault();
+
+
+		$("#mixplaylistsection").fadeIn().animate({height:"100%"},{duration:1000});
+
+			$("#viewallplaylist").delay(1000).fadeIn();
+			$("#viewtrailers").delay(1000).fadeIn();
+
+
+
+});
+
+
+
+$("#viewtrailers").click(function(e){
+
+	e.preventDefault();
+
+			$("#viewallplaylist").fadeOut();
+			$("#viewtrailers").fadeOut();
+		$("#mixplaylistsection").delay(1000).animate({height:"0"},{duration:1000}).fadeOut();
+
+
+
+});
+
+
+
+
+
+//////////////////////////////////////////////////////M I X E S      S E C T I O N ////////////////////////////////////////////////////////////////////////////////////
 
 
 		});//////////////////////////////////ready/////////////////////////////////////
