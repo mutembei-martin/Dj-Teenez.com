@@ -2157,8 +2157,8 @@ overflow: hidden;
   left:0;
   top:0;
   color: #000;
-  font-size: 1.2em;
-  font-family:serif, 'Cutive Mono';
+  font-size: 1.4em;
+  font-family:serif;
   text-align:center;
   line-height: 40px;
   font-weight: bolder;
@@ -2715,7 +2715,7 @@ option{
 }
 
 #viewvideotrailers{
-  font-size: .9em;
+  font-size: 1.1em;
   line-height: 35px;
 }
 
@@ -2963,7 +2963,7 @@ option{
 }
 
 #viewvideotrailers{
-  font-size: .8em;
+  font-size: 1em;
   line-height: 25px;
 }
 
@@ -3234,7 +3234,7 @@ background:transparent;
 }
 
 #viewvideotrailers{
-  font-size: .85em;
+  font-size: 1.05em;
   line-height: 35px;
 }
 
@@ -3618,7 +3618,7 @@ background:transparent;
 }
 
 #viewvideotrailers{
-  font-size: .9em;
+  font-size: 1.1em;
   line-height: 30px;
 }
 
@@ -3717,7 +3717,7 @@ background:transparent;
   line-height: 25px;
 }
 #viewvideotrailers{
-  font-size: .7em;
+  font-size: .9em;
   line-height: 25px;
 }
 
