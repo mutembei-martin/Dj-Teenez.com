@@ -1260,7 +1260,7 @@ top nav
   height: 100%;
   width: 50%;
   float:left;
-  color:#999;
+  color:#666666;
   background: transparent;
 }
 
@@ -1273,7 +1273,7 @@ top nav
   height: 100%;
   width: 50%;
   float:right;
-  color: #999900;
+  color: #fff;
   background: transparent;
 }
 
@@ -1298,7 +1298,7 @@ top nav
   left: 100%;
   height: 1px;
   width: 80%;
-  background: #e6e600;
+  background: #fff;
   transition: .5s;
 }
 
@@ -1322,7 +1322,7 @@ top nav
   left: 100%;
   height: 1px;
   width: 80%;
-  background: #0099ff;
+  background: #fff;
   transition: .5s;
 }
 
@@ -1344,7 +1344,6 @@ background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,
 background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
   background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
 overflow: hidden;
-/*  opacity: .9;*/
   box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
 
 }
@@ -1511,6 +1510,7 @@ background: transparent;
   line-height: 60px;
   font-weight: bolder;
   font-family: 'Cutive Mono';
+    cursor: pointer;
 }
 
 option{
@@ -1641,6 +1641,7 @@ background: -webkit-linear-gradient(30deg, transparent,transparent,#999999,#fff,
   font-weight: bolder;
   text-align: right;
   font-family: 'Cutive Mono';
+  cursor: pointer;
 }
 
 #productsselect-options option{
@@ -1767,7 +1768,7 @@ overflow: hidden;
 #mixes{
   position: relative;
   left:0;
-  top:0;
+  top:100%;
   color: #9900cc;
   font-size: 2.5em;
   font-family:'Elephant';
@@ -1781,13 +1782,27 @@ overflow: hidden;
   left:0;
   top:0;
   height: 60px;
+  overflow: hidden;
   width: 100%;
   background:#000;
 }
 
+#intromixes:before{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 20%;
+  height: 60%;
+  width: 100%;
+  background:transparent;
+  border-right:1px solid #fff;
+  
+}
+
+
 #intro{
   position: relative;
-  left:0;
+  left:100%;
   top:0;
   color: #fff;
   font-size: 1.7em;
@@ -1821,6 +1836,7 @@ overflow: hidden;
   line-height: 50px;
   font-weight: bold;
   letter-spacing: 2px;
+  opacity: 0;
 }
 
 #introtrailers{
@@ -1828,8 +1844,21 @@ overflow: hidden;
   left:3%;
   bottom:0;
   height: calc(100% - 250px);
-  width: 94%;
-  background:#0FF;
+  width: 97%;
+  background:#000;
+
+}
+
+#introtrailers:before{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  background:transparent;
+  border-right:1px solid #fff;
+  
 }
 
 #viewalltrailers{
@@ -1840,6 +1869,7 @@ overflow: hidden;
   width: 130px;
   background:transparent;
   cursor: pointer;
+  opacity: 0;
 }
 
 #viewalltrailers:before{
@@ -1977,7 +2007,7 @@ overflow: hidden;
 
 #mixesplaylist{
   position: relative;
-  left:0;
+  left:-100%;
   top:0;
   color: #fff;
   font-size: 1.7em;
@@ -2012,14 +2042,15 @@ overflow: hidden;
   line-height: 50px;
   font-weight: bold;
   letter-spacing: 2px;
+  opacity: 0;
 }
 
 #theplaylist{
   position: relative;
-  left:3%;
+  left:0;
   bottom:0;
   height: calc(100% - 250px);
-  width: 94%;
+  width: 97%;
   background:#000;
 }
 
@@ -2031,6 +2062,7 @@ overflow: hidden;
   width: 130px;
   background:transparent;
   cursor: pointer;
+  opacity: 0;
 }
 #viewallplaylist:before{
   content: '';
@@ -2098,6 +2130,7 @@ overflow: hidden;
   float:right;
   background:transparent;
   cursor: pointer;
+  display: none;
 }
 #viewfullplaylist:before{
   content: '';
@@ -2167,6 +2200,7 @@ overflow: hidden;
   float:right;
   background:transparent;
   cursor: pointer;
+  display: none;
 
 }
 #viewtrailers:before{
@@ -2235,11 +2269,199 @@ background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,
 background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
   background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
 overflow: hidden;
-/*  opacity: .9;*/
+  opacity: .9;
   box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
 
 }
 
+#servicessec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float:left;
+  overflow: hidden;
+  background:#999;
+
+}
+
+#myservicess{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 80px;
+  width: 100%;
+  float:left;
+   background: -moz-linear-gradient(top, transparent,transparent,#000,#000);
+background: -webkit-linear-gradient(top, transparent,transparent,#000,#000);
+  background: linear-gradient(top,transparent,transparent,#000,#000);
+  overflow: hidden;
+}
+
+#myservices{
+  position: relative;
+  left:0;
+  top:100%;
+  color: #000;
+  font-size: 2.5em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 83px;
+}
+
+#servicescroll{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 60px;
+  width: 100%;
+  float:left;
+  background:#4d4d4d;
+    overflow: hidden;
+  box-shadow: 0px 0px 8px rgba(255,255,255,.5);
+}
+
+
+#servicescrolled{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 140%;
+  float:left;
+  overflow: hidden;
+  background:transparent;
+}
+
+#servicescrolled1{
+  position: relative;
+  left: 0;
+  top:10%;
+  height: 80%;
+  width: 100%;
+  float:left;
+  background:transparent;
+}
+
+#prevservicescroll{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 50px;
+  background:#000;
+  cursor: pointer;
+}
+
+#Layer_1ass{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%); 
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#nextservicescroll{
+  position: absolute;
+  right: 0;
+  top:0;
+  height: 100%;
+  width: 50px;
+  background:#000;
+  cursor: pointer;
+}
+
+
+#Layer_1fu{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%); 
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#servicesdescription{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 140px);
+  width: 100%;
+  float:left;
+  background:#1a1a1a;
+
+}
+
+
+
+#projectssec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float:left;
+  background:#000;
+    opacity: .7;
+}
+
+
+#myprojectssec{
+  position: relative;
+  right: 2%;
+  top:0;
+  height: 0;
+  width: 96%;
+  float: right;
+  overflow: hidden;
+  /*background:#d9d9d9;*/
+  border-bottom: 5px solid #d9d9d9;
+  border-right:  2.5px solid #d9d9d9;
+  border-left: 2.5px solid #d9d9d9;
+  background: -moz-linear-gradient(top, transparent,transparent,#000,#000);
+background: -webkit-linear-gradient(top, transparent,transparent,#000,#000);
+  background: linear-gradient(top,transparent,transparent,#000,#000);
+}
+
+
+#myprojects{
+  position: relative;
+  left:0;
+  top:100%;
+  color: #000;
+  font-size: 2.2em;
+  font-family:'Comic Sans MS';
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 65px;
+  font-weight: bolder;
+}
+
+#projectsdescription{
+  position: relative;
+  left:0;
+  top:0;
+  height: calc(100% - 80px);
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+.projectsimg{
+  position: relative;
+  left:0;
+  bottom: 0;
+  height:100%;
+  width: auto;
+  padding-left: 2%;
+  float: left;
+}
 
 #contactsection{
   position: absolute;
@@ -2252,16 +2474,56 @@ background: -moz-linear-gradient(30deg, transparent,transparent,#000, #000,#000,
 background: -webkit-linear-gradient(30deg, transparent,transparent,#000, #000,#000,#0000, #000,#000, transparent,transparent);
   background: linear-gradient(30deg,transparent,transparent,#000, #000,#000,#000, #000,#000, transparent,transparent);
 overflow: hidden;
-/*  opacity: .9;*/
+  opacity: .9;
   box-shadow: 10px 0px 10px rgba(0, 0, 0, .5);
 
 }
 
 
+#ww{
+   position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float: left;
+  background:#fff;
+}
 
 
+/*#ww:before {
+  content:'' ;
+  position: absolute;
+  left:0;
+  top:10%;
+  height: 80%;
+  width: 100%;
+  float: left;
+  border-right: 1px solid #fff;
+  background:transparent;
+}*/
 
 
+#poo{
+  position: relative;
+  left:0;
+  top:0;
+  height: 80px;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #000;
+  background:#fff;
+}
+
+#zz{
+   position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float: left;
+  background:#000;
+}
 
 
 
@@ -2656,6 +2918,32 @@ overflow: hidden;
   background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
   background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
 }
+
+
+#servicessec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float:left;
+  background:#999;
+
+}
+#projectssec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float:left;
+  background:#0099ff;
+    opacity: .7;
+}
+
+
+
+
 
 #contactsection{
 
