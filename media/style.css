@@ -1388,6 +1388,7 @@ overflow: hidden;
   width: 100%;
   background:transparent;
   overflow: hidden;
+  border-bottom: 1px solid #fff;
   /*display: none;*/
 
 }
@@ -1396,7 +1397,7 @@ overflow: hidden;
   position: relative;
   top: 0;
   left: -100%;
-  height: 95%;
+  height: 100%;
   /*overflow: hidden;*/
   width: 50%;
   background: transparent;
@@ -1522,7 +1523,7 @@ option{
   position: relative;
   top: 0;
   left: 100%;
-  height: 95%;
+  height: 100%;
   overflow: hidden;
   width: 50%;
   background: transparent;
@@ -1557,9 +1558,9 @@ option{
 
 #products-defshome{
   position: relative;
-  top: 5%;
+  top: 0;
   left: -100%;
-  height: 95%;
+  height: 100%;
   /*overflow: hidden;*/
   width: 50%;
   background: transparent;
@@ -1567,9 +1568,9 @@ option{
 }
 #productshome{
   position: relative;
-  top: 5%;
+  top: 0;
   left: 100%;
-  height: 95%;
+  height: 100%;
   overflow: hidden;
   width: 50%;
   background: transparent;
@@ -2399,50 +2400,6 @@ background: -webkit-linear-gradient(top, transparent,transparent,#000,#000);
 }
 
 
-
-#projectssec{
-  position: relative;
-  left: 0;
-  top:0;
-  height: 100%;
-  width: 50%;
-  float:left;
-  background:#000;
-    opacity: .7;
-}
-
-
-#myprojectssec{
-  position: relative;
-  right: 2%;
-  top:0;
-  height: 0;
-  width: 96%;
-  float: right;
-  overflow: hidden;
-  /*background:#d9d9d9;*/
-  border-bottom: 5px solid #d9d9d9;
-  border-right:  2.5px solid #d9d9d9;
-  border-left: 2.5px solid #d9d9d9;
-  background: -moz-linear-gradient(top, transparent,transparent,#000,#000);
-background: -webkit-linear-gradient(top, transparent,transparent,#000,#000);
-  background: linear-gradient(top,transparent,transparent,#000,#000);
-}
-
-
-#myprojects{
-  position: relative;
-  left:0;
-  top:100%;
-  color: #000;
-  font-size: 2.2em;
-  font-family:'Comic Sans MS';
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 65px;
-  font-weight: bolder;
-}
-
 #projectsdescription{
   position: relative;
   left:0;
@@ -2491,32 +2448,289 @@ overflow: hidden;
 }
 
 
-/*#ww:before {
-  content:'' ;
-  position: absolute;
-  left:0;
-  top:10%;
-  height: 80%;
-  width: 100%;
-  float: left;
-  border-right: 1px solid #fff;
-  background:transparent;
-}*/
-
-
-#poo{
+#contactsec{
   position: relative;
   left:0;
   top:0;
   height: 80px;
   width: 100%;
   float: left;
-  border-bottom: 1px solid #000;
+  border-bottom: 5px solid #000;
   background:#fff;
 }
 
+
+
+#mycontacts{
+ position: relative;
+  left:0;
+  top:0;
+  color: #000;
+  font-size: 2.5em;
+  font-family:'Elephant';
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 83px;
+}
+
+
+#socialsec{
+  position: relative;
+  left:0;
+  bottom:0;
+  height:calc(100% - 80px);
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+
+#connectsec{
+  position: relative;
+  left:0;
+  top:0;
+  height: 30%;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+#myconnectsec{
+  position:absolute;
+  left:8%;
+  top:80%;
+  transform: translate(0,-50%);
+  color: #000;
+  font-size: 1.2em;
+  font-family:'Cutive Mono';
+  /*letter-spacing: 2px;*/
+  text-align: center;
+
+}
+
+#phonemail{
+  position: relative;
+  left:0;
+  top:0;
+  height: 30%;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+
+#phone{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float: left;
+  background:transparent;
+}
+
+#phone p{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  font-size: 1.6em;
+  font-family:'Cutive Mono';
+  /*letter-spacing: 2px;*/
+  text-align: center;
+
+}
+
+#email{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 50%;
+  float: left;
+
+  background:transparent;
+}
+
+#email p{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  font-size: 1.6em;
+  font-family:'Cutive Mono';
+  /*letter-spacing: 2px;*/
+  text-align: center;
+
+}
+
+#socials{
+  position: relative;
+  left:0;
+  top:0;
+  height: 40%;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+#mysocialsec{
+  position: relative;
+  left:0;
+  top:0;
+  height: 60px;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+
+#mysocials{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  font-size: 1.5em;
+  font-family:'Comic Sans MS';
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+#socialmedia{
+  position:relative;
+  left:0;
+  top:0;
+  height:calc(100% - 60px);
+  width: 100%;
+  float: left;
+  background:#000;
+}
+
+#mysocialmedia{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height:60px;
+  width: 100%;
+  float: left;
+  background:#000;
+}
+
+#social-icons{
+  position:absolute;
+  left:-2%;
+  top:50%;
+  width: 100%;
+  transform: translate(0,-50%);
+  display: flex;
+  background:transparent;
+
+
+}
+
+#social-icons li{
+  float: right;
+  margin-right: 5%;
+  list-style-type: none;
+ 
+
+}
+
+#social-icons li:nth-child(6){
+    margin-right: 5%;
+    list-style-type: none;
+
+}
+
+
+#social-icons li a{
+position: relative;
+width: 50px;
+height: 50px;
+background: #fff;
+text-align: center;
+line-height: 43px;
+font-size: 25px;
+display: block;
+border-radius: 50%;
+overflow: hidden;
+border: 3px solid #fff;
+}
+
+#social-icons li a .fa{
+  position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+
+}
+
+
+#social-icons li a:hover .fa{
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+
+#social-icons li a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;.
+
+}
+
+#social-icons li a:hover:before{
+  top: 0;
+}
+
+#social-icons li:nth-child(1) a:before{
+
+    background: #19B7EA;
+     
+}
+#social-icons li:nth-child(2) a:before{
+       background: #3333ff;
+
+}
+#social-icons li:nth-child(3) a:before{
+
+    background: #ff3300;
+     
+
+}
+#social-icons li:nth-child(4) a:before{
+
+   background: #3b5999;
+    
+
+}
+#social-icons li:nth-child(5) a:before{
+
+    background: #e95950;
+    
+
+}
+#social-icons li:nth-child(6) a:before{
+      background: #4dc247;
+
+}
+
+
 #zz{
-   position: relative;
+  position: relative;
   left:0;
   top:0;
   height: 100%;
@@ -2525,7 +2739,140 @@ overflow: hidden;
   background:#000;
 }
 
+#yy{
+  position:absolute;
+  left:50%;
+  top:45%;
+  transform: translate(-50%,-50%);
+  height: 65%;
+  width: 80%;
+  float: left;
+  background:transparent;
+}
 
+
+#xx{
+  position:relative;
+  left:0;
+  top:0;
+  height: 80px;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+#www{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 1.5em;
+  font-family:'Cutive Mono';
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#vvv{
+  position:absolute;
+  left:0;
+  bottom :0;
+  height: calc(100% - 80px);
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+#moo{
+  position:relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+#more{
+  position:relative;
+  left:0;
+  top:0;
+  height: 40px;
+  width: 100%;
+  float: left;
+  background:transparent;
+}
+
+
+#moree{
+  position:relative;
+  left:0;
+  top:0;
+  height: 40px;
+  width: 45%;
+  float: left;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #fff;
+}
+
+#moreee{
+  position:relative;
+  left:10%;
+  top:0;
+  height: 40px;
+  width: 45%;
+  float: left;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #fff;
+}
+
+#mso{
+  position:relative;
+  left:0;
+  top:10px;
+  height: auto;
+  width: 100%;
+  float: left;
+  background:transparent;
+  border:none;
+}
+
+#morse{
+  position:relative;
+  left:0;
+  top:0;
+  height: auto;
+  width: 100%;
+  float: left;
+  color: #fff;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #fff;
+}
+
+#morsey{
+  position:relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float: left;
+  color: #000;
+  background:#fff;
+  border:none;
+}
+#meso{
+  position:relative;
+  left:60%;
+  top:20px;
+  height: 45px;
+  width: 40%;
+  float: left;
+  background:#0ff;
+  border:none;
+}
 
 /*//////////////////////////////////////////////////////media queries ////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -2942,7 +3289,7 @@ overflow: hidden;
 }
 
 
-
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 #contactsection{
@@ -2950,6 +3297,18 @@ overflow: hidden;
   background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
   background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
   background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+}
+
+
+#ww{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background:#fff;
+  z-index: 1;
 }
 
 }
