@@ -2131,7 +2131,7 @@ overflow: hidden;
   float:right;
   background:transparent;
   cursor: pointer;
-  display: none;
+  /*display: none;*/
 }
 #viewfullplaylist:before{
   content: '';
@@ -2201,7 +2201,7 @@ overflow: hidden;
   float:right;
   background:transparent;
   cursor: pointer;
-  display: none;
+  /*display: none;*/
 
 }
 #viewtrailers:before{
@@ -2536,7 +2536,7 @@ overflow: hidden;
   top:50%;
   transform: translate(-50%,-50%);
   color: #000;
-  font-size: 1.6em;
+  font-size: 1.45em;
   font-family:'Cutive Mono';
   /*letter-spacing: 2px;*/
   text-align: center;
@@ -2560,7 +2560,7 @@ overflow: hidden;
   top:50%;
   transform: translate(-50%,-50%);
   color: #000;
-  font-size: 1.6em;
+  font-size: 1.45em;
   font-family:'Cutive Mono';
   /*letter-spacing: 2px;*/
   text-align: center;
@@ -2613,47 +2613,36 @@ overflow: hidden;
 }
 
 #mysocialmedia{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  height:60px;
-  width: 100%;
+  position:relative;
+  margin-left: 4%;
+  margin-top:0;
+  height:100%;
+  width: 12%;
   float: left;
   background:#000;
 }
 
-#social-icons{
+#mysocialmedia li{
   position:absolute;
-  left:-2%;
+  left: 50%;
   top:50%;
-  width: 100%;
-  transform: translate(0,-50%);
-  display: flex;
-  background:transparent;
-
-
-}
-
-#social-icons li{
-  float: right;
-  margin-right: 5%;
+  transform: translate(-50%, -50%);
+  height:55px;
+  width: 55px;
+  border-radius: 50%;
   list-style-type: none;
- 
-
-}
-
-#social-icons li:nth-child(6){
-    margin-right: 5%;
-    list-style-type: none;
+  background:#fff;
 
 }
 
 
-#social-icons li a{
-position: relative;
-width: 50px;
-height: 50px;
+#mysocialmedia li a{
+position:absolute;
+left: 49.8%;
+top:50.5%;
+transform: translate(-50%, -50%);
+width: 52px;
+height: 52px;
 background: #fff;
 text-align: center;
 line-height: 43px;
@@ -2664,7 +2653,7 @@ overflow: hidden;
 border: 3px solid #fff;
 }
 
-#social-icons li a .fa{
+#mysocialmedia li a .fa{
   position: relative;
     color: #262626;
     transition: .5s;
@@ -2673,57 +2662,69 @@ border: 3px solid #fff;
 }
 
 
-#social-icons li a:hover .fa{
+#mysocialmedia li a:hover .fa{
     color: #fff;
     transform: rotateY(360deg);
 }
 
-
-#social-icons li a:before{
+/*
+#mysocialmedia li a:before{
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f00;
+    background: #0ff;
     transition: .5s;
-    z-index: 2;.
+    z-index: 2;
 
-}
+}*/
 
-#social-icons li a:hover:before{
+#mysocialmedia li a:hover:before{
   top: 0;
 }
 
-#social-icons li:nth-child(1) a:before{
+#mysocialmedia li a:before{
+    content: '';
+    position: absolute;
+    left:0%;
+    top:100%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+   
+     
+}
 
+#vimeo a:before{
     background: #19B7EA;
      
 }
-#social-icons li:nth-child(2) a:before{
+#mixcloud a:before{
        background: #3333ff;
 
 }
-#social-icons li:nth-child(3) a:before{
+#soundcloud a:before{
 
     background: #ff3300;
      
 
 }
-#social-icons li:nth-child(4) a:before{
+#facebook a:before{
 
    background: #3b5999;
     
 
 }
-#social-icons li:nth-child(5) a:before{
+#instagram a:before{
 
     background: #e95950;
     
 
 }
-#social-icons li:nth-child(6) a:before{
+#whatsapp a:before{
       background: #4dc247;
 
 }
@@ -2777,7 +2778,7 @@ border: 3px solid #fff;
   position:absolute;
   left:0;
   bottom :0;
-  height: calc(100% - 80px);
+  height: calc(100% - 100px);
   width: 100%;
   float: left;
   background:transparent;
@@ -2969,38 +2970,48 @@ border: 3px solid #fff;
 }
 
 
+
+#servicessec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float:left;
+  background:#999;
+
+}
+#projectssec{
+  position: relative;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float:left;
+  background:#0099ff;
+    opacity: .7;
 }
 
-/*////////////////////////////////////////////750px///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-
-@media screen and (max-width: 750px) {
-
-
-#pre-loader{
-  position: absolute;
-    height: 130px;
-    width: 130px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#ww{
+  position: relative;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background:#fff;
+  z-index: 1;
 }
 
 
-#topnav{
-  top: -70px;
+
+
+
 }
 
 
-#menu{
-  left: 5px;
-}
-
-#menu1{
-  left: 10px;
-}
-
+@media screen and (max-width: 850px) {
 
 
 #search-ico{
@@ -3027,13 +3038,6 @@ border: 3px solid #fff;
   z-index: 3;
 
 }
-#navleft{
-  position: absolute;
-  top: 30%;
-  left: 30px;
-  transform: translate(-50%,-50%);
-
-}
 #navright{
   position: absolute;
   top: 30%;
@@ -3042,63 +3046,7 @@ border: 3px solid #fff;
 
 
 }
-#middlebar{
-  width: 100%;
-}
-
-#name-svg{
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 200%;
-  width: 200%;
-  cursor: pointer;
-}
-
-#defs{
-  font-size: 21px;
- /* line-height: 40px;
-  margin-top: 20px;*/
-}
-
-#musicc{
-  font-size: 30px;
-}
-#sounds{
-  font-size: 25px;
-}
-#copyrights{
-  width: 40%;
-  font-size: 12px;
-}
-#copyrights p{
-  padding-left: 0;
-}
-#developer-terms{
-  width: 50%;
-  font-size: 12px;
-
-}
-#developer{
-  text-align: left;
-}
-#developer::after{
-  left: 0%;
-  width: 0%;
-}
-#developer p{
-  padding-right: 0;
-}
-#terms p{
-  padding-right: 0;
-} 
-#home{
-
-  background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
-  background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
-  background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
-}
+  
 
 #hidtop{
   font-size: 17px;
@@ -3169,6 +3117,113 @@ border: 3px solid #fff;
 #productsselect-options{
   text-align: right;
 }
+
+
+}
+
+
+
+
+
+/*////////////////////////////////////////////750px///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+@media screen and (max-width: 750px) {
+
+
+#pre-loader{
+  position: absolute;
+    height: 130px;
+    width: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#topnav{
+  top: -70px;
+}
+
+
+#menu{
+  left: 5px;
+}
+
+#menu1{
+  left: 10px;
+}
+
+
+
+
+#navleft{
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  transform: translate(-50%,-50%);
+
+}
+
+#middlebar{
+  width: 100%;
+}
+
+#name-svg{
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 200%;
+  width: 200%;
+  cursor: pointer;
+}
+
+#defs{
+  font-size: 21px;
+ /* line-height: 40px;
+  margin-top: 20px;*/
+}
+
+#musicc{
+  font-size: 30px;
+}
+#sounds{
+  font-size: 25px;
+}
+#copyrights{
+  width: 40%;
+  font-size: 12px;
+}
+#copyrights p{
+  padding-left: 0;
+}
+#developer-terms{
+  width: 50%;
+  font-size: 12px;
+
+}
+#developer{
+  text-align: left;
+}
+#developer::after{
+  left: 0%;
+  width: 0%;
+}
+#developer p{
+  padding-right: 0;
+}
+#terms p{
+  padding-right: 0;
+} 
+#home{
+
+  background: -moz-linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: -webkit-linear-gradient(30deg, transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+  background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
+}
+
 
 
 #mixsection{
@@ -3267,27 +3322,6 @@ border: 3px solid #fff;
 }
 
 
-#servicessec{
-  position: relative;
-  left: 0;
-  top:0;
-  height: 100%;
-  width: 100%;
-  float:left;
-  background:#999;
-
-}
-#projectssec{
-  position: relative;
-  left: 0;
-  top:0;
-  height: 100%;
-  width: 100%;
-  float:left;
-  background:#0099ff;
-    opacity: .7;
-}
-
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -3299,17 +3333,6 @@ border: 3px solid #fff;
   background: linear-gradient(30deg,transparent,#000000, #000000,#000,#000, #000,#000000, transparent);
 }
 
-
-#ww{
-  position: relative;
-  left:0;
-  top:0;
-  height: 100%;
-  width: 100%;
-  float: left;
-  background:#fff;
-  z-index: 1;
-}
 
 }
 /*/////////////////////////////////////////////////////////////////////////////////////600///////////////////////////////////////////////////////////////*/
