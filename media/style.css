@@ -2639,13 +2639,13 @@ overflow: hidden;
 #mysocialmedia li a{
 position:absolute;
 left: 49.8%;
-top:50.5%;
+top:50.8%;
 transform: translate(-50%, -50%);
 width: 52px;
 height: 52px;
 background: #fff;
 text-align: center;
-line-height: 43px;
+line-height: 45px;
 font-size: 25px;
 display: block;
 border-radius: 50%;
@@ -3046,7 +3046,7 @@ border: 3px solid #fff;
 
 
 }
-  
+
 
 #hidtop{
   font-size: 17px;
