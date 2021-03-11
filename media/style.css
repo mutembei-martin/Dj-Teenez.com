@@ -2631,6 +2631,7 @@ overflow: hidden;
   width: 55px;
   border-radius: 50%;
   list-style-type: none;
+  overflow: hidden;
   background:#fff;
 
 }
@@ -2638,14 +2639,14 @@ overflow: hidden;
 
 #mysocialmedia li a{
 position:absolute;
-left: 49.8%;
-top:50.8%;
+left: 50%;
+top:51%;
 transform: translate(-50%, -50%);
-width: 52px;
-height: 52px;
+width: 55px;
+height: 55px;
 background: #fff;
 text-align: center;
-line-height: 45px;
+line-height: 48px;
 font-size: 25px;
 display: block;
 border-radius: 50%;
