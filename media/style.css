@@ -3382,6 +3382,24 @@ border: 3px solid #fff;
 }
 
 
+#contactsec{
+  height: 70px;
+  border-bottom: 4px solid #000;
+}
+
+
+
+#mycontacts{
+  font-size: 1.85em;
+  line-height: 73px;
+}
+
+
+#socialsec{
+  height:calc(100% - 70px);
+}
+
+
 }
 /*/////////////////////////////////////////////////////////////////////////////////////600///////////////////////////////////////////////////////////////*/
 
